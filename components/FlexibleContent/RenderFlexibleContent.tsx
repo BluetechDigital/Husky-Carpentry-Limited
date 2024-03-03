@@ -12,6 +12,7 @@ import OurClients from "../OurClients";
 import ContactInfo from "../ContactInfo";
 import OurServices from "../OurServices";
 import ContactForm from "../ContactForm";
+import OurLocation from "../OurLocation";
 import ErrorPage from "../Global/ErrorPage";
 import GettingStarted from "../GettingStarted";
 import TitleParagraph from "../TitleParagraph";
@@ -85,6 +86,10 @@ const RenderFlexibleContent: FC = () => {
 									paragraph={item?.paragraph}
 									servicesGrid={item?.servicesGrid}
 								/>
+							</>
+						) : item?.fieldGroupName === `${FlexibleContent}_OurLocation` ? (
+							<>
+								<OurLocation title={item?.title} paragraph={item?.paragraph} />
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_GettingStarted` ? (
 							<>

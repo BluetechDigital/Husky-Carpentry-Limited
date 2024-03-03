@@ -118,6 +118,11 @@ export const getAllFlexibleContentComponents = async (
 													}
 												}
 											}
+											... on ${postTypeFlexibleContent}_OurLocation {
+												fieldGroupName
+												title
+												paragraph
+											}
 											... on ${postTypeFlexibleContent}_GettingStarted {
             									fieldGroupName
             									title
