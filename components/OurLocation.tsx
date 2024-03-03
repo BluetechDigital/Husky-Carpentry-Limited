@@ -45,7 +45,7 @@ const OurLocation: FC<IOurLocation> = ({title, paragraph}) => {
 						style={{border: "0"}}
 						allowFullScreen={true}
 						referrerPolicy="no-referrer-when-downgrade"
-						src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Gatcombe%20House,%20Copnor%20Road,%20Portsmouth,%20England,%20PO3%205EJ+()&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20162.514047084078!2d-1.22016954706058!3d50.82534278150633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487465cf539a4317%3A0x5998fce561e66f71!2sHusky%20Carpentry%20Limited!5e0!3m2!1sen!2suk!4v1709510339613!5m2!1sen!2suk"
 					></iframe>
 				</div>
 			</div>
