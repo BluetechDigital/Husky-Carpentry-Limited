@@ -1,0 +1,24 @@
+/*===== FONTS =====*/
+@font-face {
+	font-family: Inter;
+	src: url("../fonts/Inter.woff");
+}
+
+@font-face {
+	font-family: PlusJakartaSans;
+	src: url("../fonts/PlusJakartaSans.woff");
+}
+
+@font-face {
+	font-family: BROmegaBlack;
+	src: url("../fonts/BROmega-Black.woff");
+}
+
+@font-face {
+	font-family: ObjectSans;
+	src: url("../fonts/ObjectSans-Heavy.woff");
+}
+
+// Font Stack Properties
+$main: "ObjectSans", sans-serif;
+$body: "PlusJakartaSans", "Inter", sans-serif;

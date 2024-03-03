@@ -1,0 +1,27 @@
+// Imports
+@import "../base/fonts";
+@import "../base/colors";
+
+.gettingStarted {
+	p {
+		a {
+			@apply font-semibold underline text-orange-two hover:text-orange-two transition-all ease-in-out duration-500;
+		}
+	}
+
+	.stepOne,
+	.stepThree {
+		clip-path: none;
+
+		@media screen and (min-width: 1024px) {
+			clip-path: polygon(10% 0, 100% 0, 100% 100%, 5% 100%);
+		}
+	}
+	.stepTwo {
+		clip-path: none;
+
+		@media screen and (min-width: 1024px) {
+			clip-path: polygon(0 0, 90% 0, 95% 100%, 0% 100%);
+		}
+	}
+}

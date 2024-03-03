@@ -1,0 +1,23 @@
+// Imports
+@import "../base/fonts";
+@import "../base/colors";
+
+.ourServices {
+	p {
+		a {
+			@apply font-semibold underline text-orange-two hover:text-orange-two transition-all ease-in-out duration-500;
+		}
+	}
+	.card {
+		clip-path: polygon(94% 0, 100% 6%, 100% 100%, 0 100%, 0 0);
+	}
+
+	.card:hover {
+		// transform: scale(1.02);
+
+		.content {
+			height: 100%;
+			background: none;
+		}
+	}
+}
