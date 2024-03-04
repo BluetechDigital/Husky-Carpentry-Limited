@@ -7,7 +7,6 @@
 		font-family: $body;
 	}
 
-	.aboutUsSublinks,
 	.servicesSublinks {
 		li:nth-last-child(0) {
 			display: none;
@@ -64,7 +63,7 @@
 
 	.navToggle {
 		cursor: pointer;
-		position: fixed;
+		// position: fixed;
 		z-index: 999;
 		right: 25px;
 		top: 13px;
