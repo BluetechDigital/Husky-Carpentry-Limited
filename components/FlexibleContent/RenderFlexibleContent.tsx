@@ -32,11 +32,7 @@ const RenderFlexibleContent: FC = () => {
 					<section key={keys}>
 						{item?.fieldGroupName === `${FlexibleContent}_Hero` ? (
 							<>
-								<Hero
-									title={item?.title}
-									paragraph={item?.paragraph}
-									backgroundImage={item?.backgroundImage}
-								/>
+								<Hero heroSlider={item?.heroSlider} />
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_HeroTwo` ? (
 							<>

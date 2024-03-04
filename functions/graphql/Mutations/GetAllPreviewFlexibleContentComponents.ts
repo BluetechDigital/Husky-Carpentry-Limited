@@ -24,16 +24,29 @@ export const getAllPreviewFlexibleContentComponents = async (
 										flexibleContent {
 											... on ${postTypeFlexibleContent}_Hero {
 												fieldGroupName
-												title
-												paragraph
-												backgroundImage {
-													altText
-													sourceUrl
-													mediaDetails {
-														height
-														width
-													}
-												}
+												heroSlider {
+              										title
+              										paragraph
+													buttonLink {
+                										url
+                										title
+                										target
+                									}
+                									buttonLinkTwo {
+                										url
+                										title
+                										target
+                									}
+              										backgroundImage {
+              											altText
+              											sourceUrl
+              											mediaDetails {
+              												height
+              												width
+              											}
+              										}
+													
+              									}
 											}
 											... on ${postTypeFlexibleContent}_HeroTwo {
 												fieldGroupName
@@ -120,7 +133,8 @@ export const getAllPreviewFlexibleContentComponents = async (
 														}
 													}
 												}
-											}... on ${postTypeFlexibleContent}_OurLocation {
+											}
+											... on ${postTypeFlexibleContent}_OurLocation {
 												fieldGroupName
 												title
 												paragraph
@@ -220,11 +234,6 @@ export const getAllPreviewFlexibleContentComponents = async (
 												backgroundImage {
 													sourceUrl
 												}
-											}
-											... on ${postTypeFlexibleContent}_ContactInfo {
-												fieldGroupName
-												title
-												paragraph
 											}
 											... on ${postTypeFlexibleContent}_ContactForm {
 												fieldGroupName

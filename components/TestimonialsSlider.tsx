@@ -1,15 +1,13 @@
 // Imports
 import Image from "next/image";
-import {motion} from "framer-motion";
 import React, {FC, Fragment} from "react";
 import {useGlobalContext} from "@/context/global";
-import {initial, fadeInUp} from "../animations/animations";
 
 // Swiper.js Slider
 import "swiper/css";
 import "swiper/css/navigation";
-import {Autoplay, Navigation} from "swiper/modules";
 import {Swiper, SwiperSlide} from "swiper/react";
+import {Autoplay, Navigation} from "swiper/modules";
 
 // Styling
 import styles from "../styles/components/Testimonials.module.scss";

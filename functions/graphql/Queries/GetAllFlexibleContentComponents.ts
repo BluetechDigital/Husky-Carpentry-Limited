@@ -21,16 +21,29 @@ export const getAllFlexibleContentComponents = async (
 										flexibleContent {
 											... on ${postTypeFlexibleContent}_Hero {
 												fieldGroupName
-												title
-												paragraph
-												backgroundImage {
-													altText
-													sourceUrl
-													mediaDetails {
-														height
-														width
-													}
-												}
+												heroSlider {
+              										title
+              										paragraph
+													buttonLink {
+                										url
+                										title
+                										target
+                									}
+                									buttonLinkTwo {
+                										url
+                										title
+                										target
+                									}
+              										backgroundImage {
+              											altText
+              											sourceUrl
+              											mediaDetails {
+              												height
+              												width
+              											}
+              										}
+													
+              									}
 											}
 											... on ${postTypeFlexibleContent}_HeroTwo {
 												fieldGroupName
