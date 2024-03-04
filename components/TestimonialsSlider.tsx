@@ -22,8 +22,7 @@ const TestimonialsSlider: FC = () => {
 		<>
 			<div
 				className={
-					styles.testimonialsSlider +
-					` px-0 py-8 overflow-x-hidden bg-white border-t-[15px]`
+					styles.testimonialsSlider + ` px-0 py-8 overflow-x-hidden bg-white`
 				}
 			>
 				<div className="container px-4 mx-auto">
