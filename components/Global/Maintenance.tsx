@@ -35,7 +35,7 @@ const Maintenance: FC<IMaintenance> = ({title, paragraph, backgroundImage}) => {
 							height={backgroundImage?.mediaDetails?.height}
 							className="object-cover object-center w-full h-full"
 						/>
-						<div className="absolute top-0 h-screen bottom-0 left-0 w-full opacity-90 bg-gradient-to-b from-blue-dark from-5% via-blue-dark via-10% to-blue-dark to-100%" />
+						<div className="absolute top-0 h-screen bottom-0 left-0 w-full opacity-90 bg-gradient-to-b from-pureBlack from-5% via-pureBlack via-10% to-pureBlack to-100%" />
 					</motion.div>
 					<motion.div
 						initial={initial}

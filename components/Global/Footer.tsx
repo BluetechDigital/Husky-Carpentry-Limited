@@ -24,10 +24,10 @@ const Footer: FC = () => {
 		<footer
 			className={
 				styles.footer +
-				" py-4 px-0 overflow-hidden bg-pureBlack bg-cover bg-center bg-no-repeat"
+				" p-0 overflow-hidden bg-lightGreyTwo bg-cover bg-center bg-no-repeat"
 			}
 		>
-			<div className="container px-4 mx-auto">
+			<div className="container p-4 mx-auto">
 				<div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-4 gap-16 lg:gap-4">
 					<motion.div
 						initial={initial}
@@ -42,12 +42,12 @@ const Footer: FC = () => {
 								height={500}
 								alt="Husky Carpentry Limited Logo"
 								src="/img/logos/husky-carpentry-logo.png"
-								className="object-contain object-center mx-auto lg:mx-0 w-fit h-[125px] sm:h-[115px]"
+								className="object-contain object-center mx-auto lg:mx-0 w-fit h-[75px]"
 							/>
 						</Link>
 						<Paragraph
 							content={globalContext?.themesOptionsContent?.textarea}
-							tailwindStyling="px-4 lg:px-0 max-w-full lg:max-w-sm text-tiny text-lightGreyTwo text-center lg:text-left"
+							tailwindStyling="px-4 lg:px-0 max-w-full lg:max-w-sm text-tiny text-black text-center lg:text-left"
 						/>
 						<div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-0 gap-4 lg:max-w-sm">
 							{globalContext?.themesOptionsContent?.certificationsGallery
@@ -62,7 +62,7 @@ const Footer: FC = () => {
 												height={item?.mediaDetails.height}
 												className={`${
 													item?.sourceUrl
-														? "w-[125px] h-full md:w-full md:h-full object-contain object-center"
+														? "w-[175px] h-full md:w-full md:h-full object-contain object-center"
 														: "hidden"
 												}`}
 											/>
@@ -76,7 +76,7 @@ const Footer: FC = () => {
 					</motion.div>
 					<div className="flex flex-col md:flex-row items-center lg:items-start justify-center gap-6 xl:gap-20">
 						<div className="flex flex-col px-0">
-							<h4 className="mb-5 text-base font-semibold tracking-normal text-center text-lightGreyTwo uppercase lg:text-left">
+							<h4 className="mb-5 text-base font-semibold tracking-normal text-center text-black uppercase lg:text-left">
 								About
 							</h4>
 							<motion.ul
@@ -99,7 +99,7 @@ const Footer: FC = () => {
 												>
 													<Link
 														href={`${item?.node?.url}`}
-														className="text-lightGrey transition-all duration-200 ease-in-out text-tiny hover:text-blue-default"
+														className="text-black transition-all duration-200 ease-in-out text-tiny hover:text-blue-default"
 													>
 														{item?.node?.label}
 													</Link>
@@ -113,13 +113,13 @@ const Footer: FC = () => {
 							</motion.ul>
 						</div>
 						<div className="flex flex-col px-0">
-							<h4 className="mb-5 text-base font-semibold tracking-normal text-center text-lightGreyTwo uppercase lg:text-left">
+							<h4 className="mb-5 text-base font-semibold tracking-normal text-center text-black uppercase lg:text-left">
 								Info
 							</h4>
 							<div className="flex flex-col items-center lg:items-baseline justify-between">
 								<Paragraph
 									content={globalContext?.themesOptionsContent?.businessHours}
-									tailwindStyling="block px-4 lg:px-0 max-w-full lg:max-w-xl text-tiny text-lightGreyTwo text-center lg:text-left"
+									tailwindStyling="block px-4 lg:px-0 max-w-full lg:max-w-xl text-tiny text-black text-center lg:text-left"
 								/>
 								<motion.div
 									initial={initial}
@@ -153,7 +153,7 @@ const Footer: FC = () => {
 											</svg>
 										</div>
 										<Link
-											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-blue-two"
+											className="font-medium text-tiny tracking-wide text-black hover:text-blue-two"
 											href={`mailto:${globalContext?.themesOptionsContent?.email}`}
 										>
 											{globalContext?.themesOptionsContent?.email}
@@ -184,7 +184,7 @@ const Footer: FC = () => {
 											</svg>
 										</div>
 										<Link
-											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-blue-two"
+											className="font-medium text-tiny tracking-wide text-black hover:text-blue-two"
 											href={`mailto:${globalContext?.themesOptionsContent?.emailTwo}`}
 										>
 											{globalContext?.themesOptionsContent?.emailTwo}
@@ -223,7 +223,7 @@ const Footer: FC = () => {
 											</svg>
 										</div>
 										<Link
-											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-blue-two"
+											className="font-medium text-tiny tracking-wide text-black hover:text-blue-two"
 											href={`tel:${globalContext?.themesOptionsContent?.phoneNumber}`}
 										>
 											{globalContext?.themesOptionsContent?.phoneNumber}
@@ -253,7 +253,7 @@ const Footer: FC = () => {
 													{" "}
 													<path
 														d="M14.5 6.5C15.2372 6.64382 15.9689 6.96892 16.5 7.5C17.0311 8.03108 17.3562 8.76284 17.5 9.5M15 3C16.5315 3.17014 17.9097 3.91107 19 5C20.0903 6.08893 20.8279 7.46869 21 9M20.9995 16.4767V19.1864C21.0037 20.2223 20.0723 21.0873 19.0265 20.9929C10.0001 21 3.00006 13.935 3.00713 4.96919C2.91294 3.92895 3.77364 3.00106 4.80817 3.00009H7.52331C7.96253 2.99577 8.38835 3.151 8.72138 3.43684C9.66819 4.24949 10.2772 7.00777 10.0429 8.10428C9.85994 8.96036 8.99696 9.55929 8.41026 10.1448C9.69864 12.4062 11.5747 14.2785 13.8405 15.5644C14.4272 14.9788 15.0274 14.1176 15.8851 13.935C16.9855 13.7008 19.7615 14.3106 20.5709 15.264C20.858 15.6021 21.0105 16.0337 20.9995 16.4767Z"
-														stroke="#ffffff"
+														stroke="#111"
 														strokeWidth="1.5"
 														strokeLinecap="round"
 														strokeLinejoin="round"
@@ -262,7 +262,7 @@ const Footer: FC = () => {
 											</svg>
 										</div>
 										<Link
-											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-blue-two"
+											className="font-medium text-tiny tracking-wide text-black hover:text-blue-two"
 											href={`tel:${globalContext?.themesOptionsContent?.phoneNumberTwo}`}
 										>
 											{globalContext?.themesOptionsContent?.phoneNumberTwo}
@@ -278,7 +278,7 @@ const Footer: FC = () => {
 											height="100%"
 											className="w-5 h-5"
 											style={{
-												fill: "#ffffff",
+												fill: "#111",
 												fillRule: "evenodd",
 												clipRule: "evenodd",
 												strokeLinejoin: "round",
@@ -302,7 +302,7 @@ const Footer: FC = () => {
 											height="100%"
 											className="w-5 h-5"
 											style={{
-												fill: "#ffffff",
+												fill: "#111",
 												fillRule: "evenodd",
 												clipRule: "evenodd",
 												strokeLinejoin: "round",
@@ -339,17 +339,17 @@ const Footer: FC = () => {
 													fillRule="evenodd"
 													clipRule="evenodd"
 													d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-													fill="#ffffff"
+													fill="#111"
 												></path>{" "}
 												<path
 													d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-													fill="#ffffff"
+													fill="#111"
 												></path>{" "}
 												<path
 													fillRule="evenodd"
 													clipRule="evenodd"
 													d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
-													fill="#ffffff"
+													fill="#111"
 												></path>
 											</g>
 										</svg>
@@ -359,8 +359,9 @@ const Footer: FC = () => {
 						</div>
 					</div>
 				</div>
-				<div className="border-b border-blue-default my-2 opacity-50" />
-				<div className="flex flex-col-reverse items-center justify-between py-4 my-0 lg:-my-6 lg:flex-row">
+			</div>
+			<div className=" bg-pureBlack py-4 my-0">
+				<div className="container px-4 mx-auto flex flex-col-reverse lg:flex-row items-center justify-between ">
 					<motion.div
 						initial={initial}
 						variants={stagger}
@@ -370,10 +371,10 @@ const Footer: FC = () => {
 					>
 						<Paragraph
 							content={globalContext?.themesOptionsContent?.copyrightText}
-							tailwindStyling="max-w-full lg:max-w-lg text-lightGrey text-sm text-center lg:text-left"
+							tailwindStyling="max-w-full lg:max-w-lg text-lightGreyTwo text-sm text-center lg:text-left"
 						/>
 						<Link
-							className="lg:inline-block items-center justify-center px-1 text-lightGrey hover:text-blue-default hover:underline"
+							className="lg:inline-block items-center justify-center mt-2 px-1 text-lightGreyTwo hover:text-blue-default hover:underline"
 							href={`https://bluetech-digital.co.uk`}
 							target="_blank"
 						>
@@ -393,7 +394,7 @@ const Footer: FC = () => {
 							</span>
 						</Link>
 					</motion.div>
-					<ul className="flex flex-col sm:flex-row lg:-m-6 w-auto gap-4 lg:gap-2 sm:gap-6 p-6">
+					<ul className="flex flex-col sm:flex-row w-auto gap-4 lg:gap-2 sm:gap-16 p-6">
 						{globalContext?.copyrightLinks?.length > 0 ? (
 							globalContext?.copyrightLinks?.map((item: any, keys: number) => (
 								<Fragment key={keys}>
@@ -406,7 +407,7 @@ const Footer: FC = () => {
 									>
 										<Link
 											href={`${item?.node?.url}`}
-											className="text-lightGrey transition-all duration-200 ease-in-out text-sm hover:text-blue-default"
+											className="text-lightGreyTwo transition-all duration-200 ease-in-out text-sm hover:text-blue-default"
 										>
 											{item?.node?.label}
 										</Link>
