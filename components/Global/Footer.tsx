@@ -102,7 +102,7 @@ const Footer: FC = () => {
 												>
 													<Link
 														href={`${item?.node?.url}`}
-														className="text-lightGrey transition-all duration-200 ease-in-out text-tiny hover:text-aqua-default"
+														className="text-lightGrey transition-all duration-200 ease-in-out text-tiny hover:text-blue-default"
 													>
 														{item?.node?.label}
 													</Link>
@@ -138,7 +138,7 @@ const Footer: FC = () => {
 												: "hidden"
 										}
 									>
-										<div className="flex items-center justify-center w-8 h-8 rounded-full bg-aqua-two sm:mr-1">
+										<div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-two sm:mr-1">
 											<svg
 												width="20"
 												height="20"
@@ -156,7 +156,7 @@ const Footer: FC = () => {
 											</svg>
 										</div>
 										<Link
-											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-aqua-two"
+											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-blue-two"
 											href={`mailto:${globalContext?.themesOptionsContent?.email}`}
 										>
 											{globalContext?.themesOptionsContent?.email}
@@ -169,7 +169,7 @@ const Footer: FC = () => {
 												: "hidden"
 										}
 									>
-										<div className="flex items-center justify-center w-8 h-8 rounded-full bg-aqua-two sm:mr-1">
+										<div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-two sm:mr-1">
 											<svg
 												width="20"
 												height="20"
@@ -187,7 +187,7 @@ const Footer: FC = () => {
 											</svg>
 										</div>
 										<Link
-											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-aqua-two"
+											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-blue-two"
 											href={`mailto:${globalContext?.themesOptionsContent?.emailTwo}`}
 										>
 											{globalContext?.themesOptionsContent?.emailTwo}
@@ -200,7 +200,7 @@ const Footer: FC = () => {
 												: "hidden"
 										}
 									>
-										<div className="flex items-center justify-center w-8 h-8 rounded-full bg-aqua-two sm:mr-1">
+										<div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-two sm:mr-1">
 											<svg
 												viewBox="0 0 24 24"
 												fill="none"
@@ -226,7 +226,7 @@ const Footer: FC = () => {
 											</svg>
 										</div>
 										<Link
-											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-aqua-two"
+											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-blue-two"
 											href={`tel:${globalContext?.themesOptionsContent?.phoneNumber}`}
 										>
 											{globalContext?.themesOptionsContent?.phoneNumber}
@@ -239,7 +239,7 @@ const Footer: FC = () => {
 												: "hidden"
 										}
 									>
-										<div className="flex items-center justify-center w-8 h-8 rounded-full bg-aqua-two sm:mr-1">
+										<div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-two sm:mr-1">
 											<svg
 												viewBox="0 0 24 24"
 												fill="none"
@@ -265,7 +265,7 @@ const Footer: FC = () => {
 											</svg>
 										</div>
 										<Link
-											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-aqua-two"
+											className="font-medium text-tiny tracking-wide text-lightGrey hover:text-blue-two"
 											href={`tel:${globalContext?.themesOptionsContent?.phoneNumberTwo}`}
 										>
 											{globalContext?.themesOptionsContent?.phoneNumberTwo}
@@ -362,7 +362,7 @@ const Footer: FC = () => {
 						</div>
 					</div>
 				</div>
-				<div className="border-b border-aqua-default my-2 opacity-50" />
+				<div className="border-b border-blue-default my-2 opacity-50" />
 				<div className="flex flex-col-reverse items-center justify-between py-4 m-0 lg:-my-6 lg:flex-row">
 					<motion.div
 						initial={initial}
@@ -376,7 +376,7 @@ const Footer: FC = () => {
 							tailwindStyling="max-w-full lg:max-w-lg text-lightGrey text-sm text-center lg:text-left"
 						/>
 						<Link
-							className="lg:inline-block items-center justify-center px-1 text-lightGrey hover:text-aqua-default hover:underline"
+							className="lg:inline-block items-center justify-center px-1 text-lightGrey hover:text-blue-default hover:underline"
 							href={`https://bluetech-digital.co.uk`}
 							target="_blank"
 						>
@@ -409,7 +409,7 @@ const Footer: FC = () => {
 									>
 										<Link
 											href={`${item?.node?.url}`}
-											className="text-lightGrey transition-all duration-200 ease-in-out text-sm hover:text-aqua-default"
+											className="text-lightGrey transition-all duration-200 ease-in-out text-sm hover:text-blue-default"
 										>
 											{item?.node?.label}
 										</Link>

@@ -57,7 +57,7 @@
 
 			&:hover {
 				transition: all 0.5s;
-				background-color: $aqua;
+				background-color: $blue;
 			}
 		}
 	}
@@ -74,12 +74,12 @@
 		line-height: 0.6;
 		border-radius: 0px;
 		text-align: center;
-		background: $aqua;
+		background: $blue;
 		// transition: all 1s ease-in-out;
 
 		&:hover {
 			transition: all 0.2s ease-in-out;
-			background: $aqua;
+			background: $blue;
 		}
 
 		span {
@@ -137,7 +137,7 @@
 		border: none;
 		line-height: 0.6;
 		text-align: center;
-		background: $aqua;
+		background: $blue;
 		transition: all 1s ease-in-out;
 
 		span {
@@ -176,7 +176,7 @@
 		}
 
 		&:hover {
-			background: $aqua;
+			background: $blue;
 			transition: all 0.2s ease-in-out;
 		}
 	}

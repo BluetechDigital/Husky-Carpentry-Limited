@@ -39,28 +39,28 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 			titleColor = "text-black";
 			textareaColor = "text-black";
 			buttonColor = "bg-blue-default";
-			buttonHoverColor = "hover:bg-aqua-default";
+			buttonHoverColor = "hover:bg-blue-dark";
 			backgroundColor = "bg-white";
 			break;
 		case "Grey":
 			titleColor = "text-black";
 			textareaColor = "text-black";
 			buttonColor = "bg-blue-default";
-			buttonHoverColor = "hover:bg-blue-darker";
+			buttonHoverColor = "hover:bg-blue-dark";
 			backgroundColor = "bg-lightGreyTwo";
 			break;
 		case "Blue":
 			titleColor = "text-white";
 			textareaColor = "text-white";
 			buttonColor = "bg-blue-darker";
-			buttonHoverColor = "hover:bg-orange-default";
+			buttonHoverColor = "hover:bg-blue-dark";
 			backgroundColor = "bg-blue-default";
 			break;
 		case "DarkBlue":
 			titleColor = "text-white";
 			textareaColor = "text-white";
 			buttonColor = "bg-blue-default";
-			buttonHoverColor = "hover:bg-aqua-default";
+			buttonHoverColor = "hover:bg-blue-dark";
 			backgroundColor = "bg-blue-darker";
 			break;
 	}
@@ -91,20 +91,7 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 						whileInView={slideInRightFinish}
 						className={`${
 							displayContentOption == "Left" ? "lg:items-end" : "lg:items-start"
-						} lg:px-8 lg:w-1/2 h-full bg-contain bg-right bg-no-repeat`}
-						style={{
-							backgroundImage: `url("/svg/background/${
-								displayBackgroundIcon && displayBackgroundColor == "DarkBlue"
-									? "Off-site-Civil"
-									: displayBackgroundIcon && displayBackgroundColor == "Grey"
-									? "centimeter-geometric-measure"
-									: displayBackgroundIcon && displayBackgroundColor == "Blue"
-									? "carpentry-saw"
-									: displayBackgroundIcon && displayBackgroundColor == "White"
-									? "carpentry-drill-drilling"
-									: "none"
-							}.svg")`,
-						}}
+						} lg:px-8 lg:w-1/2 h-full`}
 					>
 						<motion.div
 							initial={initial}

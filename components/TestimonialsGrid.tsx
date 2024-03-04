@@ -42,7 +42,7 @@ const TestimonialsGrid: FC<ITestimonialsGrid> = ({
 							initial={initial}
 							whileInView={fadeInUp}
 							viewport={{once: true}}
-							className="max-w-sm mx-auto xl:mx-0 text-center xl:text-left text-base text-aqua-default"
+							className="max-w-sm mx-auto xl:mx-0 text-center xl:text-left text-base text-blue-default"
 						>
 							{subtitle}
 						</motion.h4>

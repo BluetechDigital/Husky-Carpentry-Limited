@@ -68,12 +68,12 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 										{item?.node?.url === "/services" ? (
 											<li
 												onClick={displayOurServicesSublinks}
-												className="border-b-[1px] border-aqua-default border-opacity-50 cursor-pointer"
+												className="border-b-[1px] border-blue-default border-opacity-50 cursor-pointer"
 											>
 												<div className="py-4 flex flex-row justify-between items-center gap-2">
 													<Link
 														href={item?.node?.url}
-														className="text-white text-tiny text-center tracking-[0.05rem] hover:text-aqua-two transition-all ease-in-out duration-500"
+														className="text-white text-tiny text-center tracking-[0.05rem] hover:text-blue-two transition-all ease-in-out duration-500"
 													>
 														{item?.node?.label}
 													</Link>
@@ -110,9 +110,9 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 																				<li
 																					className={`${
 																						keys < 1
-																							? "border-t-[1px] border-aqua-default  border-opacity-50"
+																							? "border-t-[1px] border-blue-default  border-opacity-50"
 																							: "border-t-[0px]"
-																					} hover:border-blue-two hover:bg-blue-two border-y-[1px] border-aqua-default border-opacity-50 text-white`}
+																					} hover:border-blue-default hover:bg-blue-default border-y-[1px] border-blue-default border-opacity-50 text-white`}
 																				>
 																					<Link
 																						onClick={toggleMenu}
@@ -134,11 +134,11 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 												) : null}
 											</li>
 										) : (
-											<li className="border-b-[1px] border-aqua-default border-opacity-50">
+											<li className="border-b-[1px] border-blue-default border-opacity-50">
 												<Link
 													onClick={toggleMenu}
 													href={`${item?.node?.url}`}
-													className="block py-4 text-tiny text-white hover:text-aqua-two"
+													className="block py-4 text-tiny text-white hover:text-blue-two"
 												>
 													{item?.node?.label}
 												</Link>
@@ -259,7 +259,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 											: "hidden"
 									}
 								>
-									<div className="flex items-center justify-center w-8 h-8 rounded-full bg-aqua-default sm:mr-3">
+									<div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-default sm:mr-3">
 										<svg
 											width="20"
 											height="20"
@@ -277,7 +277,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 										</svg>
 									</div>
 									<Link
-										className="font-medium text-tiny tracking-wide text-white hover:text-aqua-default"
+										className="font-medium text-tiny tracking-wide text-white hover:text-blue-default"
 										href={`mailto:${globalContext?.themesOptionsContent?.email}`}
 									>
 										{globalContext?.themesOptionsContent?.email}
@@ -293,7 +293,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 											: "hidden"
 									}
 								>
-									<div className="flex items-center justify-center w-8 h-8 rounded-full bg-aqua-default sm:mr-3">
+									<div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-default sm:mr-3">
 										<svg
 											width="20"
 											height="20"
@@ -311,7 +311,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 										</svg>
 									</div>
 									<Link
-										className="font-medium text-tiny tracking-wide text-white hover:text-aqua-default"
+										className="font-medium text-tiny tracking-wide text-white hover:text-blue-default"
 										href={`mailto:${globalContext?.themesOptionsContent?.emailTwo}`}
 									>
 										{globalContext?.themesOptionsContent?.emailTwo}

@@ -138,6 +138,6 @@ const content: IBusinessEmail.IContent = {
 	padding: "10px",
 };
 const link: IBusinessEmail.ILink = {
-	color: "#20ce88",
+	color: "#11acff",
 	textDecoration: "underline",
 };

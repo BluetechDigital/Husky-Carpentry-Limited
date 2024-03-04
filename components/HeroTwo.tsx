@@ -25,7 +25,7 @@ const HeroTwo: FC<IHeroTwo> = ({title, paragraph, backgroundImage}) => {
 					<div
 						className={
 							styles.leftSideContent +
-							" px-4 xl:px-28 py-16 lg:py-8 bg-blue-darkerTwo w-full xl:w-1/2 bg-cover bg-center bg-no-repeat"
+							" px-4 xl:px-28 py-16 lg:py-8 bg-blue-darker w-full xl:w-1/2 bg-cover bg-center bg-no-repeat"
 						}
 						style={{
 							backgroundImage: `url("/svg/background/layered-peaks-haikei-blue-bluedarker.svg")`,

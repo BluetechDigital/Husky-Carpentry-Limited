@@ -177,6 +177,6 @@ const content: ICustomerEmail.IContent = {
 	padding: "10px",
 };
 const link: ICustomerEmail.ILink = {
-	color: "#20ce88",
+	color: "#11acff",
 	textDecoration: "underline",
 };

@@ -34,7 +34,7 @@ const Hero: FC<IHero> = ({
 					<div
 						className={
 							styles.leftSideContent +
-							" px-4 xl:px-28 py-16 lg:py-8 bg-blue-darkerTwo w-full xl:w-1/2 bg-cover bg-center bg-no-repeat"
+							" px-4 xl:px-28 py-16 lg:py-8 bg-blue-darker w-full xl:w-1/2 bg-cover bg-center bg-no-repeat"
 						}
 						style={{
 							backgroundImage: `url("/svg/background/layered-peaks-haikei-blue-bluedarker.svg")`,
@@ -99,11 +99,11 @@ const Hero: FC<IHero> = ({
 											target={item?.buttonLink?.target}
 										>
 											<div
-												className={`p-2 pr-0 hover:bg-blue-two w-full sm:min-h-[14vh] lg:min-h-[14vh] sm:max-h-[20vh] lg:max-h-[20vh] transition-all ease-in-out duration-500 ${
+												className={`p-2 pr-0 hover:bg-blue-default w-full sm:min-h-[14vh] lg:min-h-[14vh] sm:max-h-[20vh] lg:max-h-[20vh] transition-all ease-in-out duration-500 ${
 													keys === 0
 														? "bg-blue-default"
 														: keys === 1
-														? "bg-blue-three"
+														? "bg-blue-default"
 														: keys === 2
 														? "bg-blue-dark"
 														: keys === 3

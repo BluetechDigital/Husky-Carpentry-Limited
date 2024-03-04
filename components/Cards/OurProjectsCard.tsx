@@ -26,12 +26,12 @@ const OurProjectsCard: FC<IOurProjectsCard> = ({
 	return (
 		<>
 			<div
-				className="w-full h-full flex flex-col xl:flex-row items-center justify-center p-0 border-l-[5px] border-b-[5px] border-blue-darkerTwo"
+				className="w-full h-full flex flex-col xl:flex-row items-center justify-center p-0 border-l-[5px] border-b-[5px] border-blue-darker"
 				style={{
 					boxShadow: "28px 28px 2px -20px rgba(0,0,0,0.1)",
 				}}
 			>
-				<div className="relative px-0 h-[325px] border-r-[5px] border-t-[5px] border-b-0 border-blue-darkerTwo w-full xl:w-1/2">
+				<div className="relative px-0 h-[325px] border-r-[5px] border-t-[5px] border-b-0 border-blue-darker w-full xl:w-1/2">
 					<Link target="" href={slug ? `projects/${slug}` : `/`}>
 						<Image
 							alt={featuredImage?.node?.altText}
@@ -95,7 +95,7 @@ const OurProjectsCard: FC<IOurProjectsCard> = ({
 								initial={initialTwo}
 								whileInView={fadeIn}
 								viewport={{once: true}}
-								className="relative px-6 py-2 text-white text-tiny w-fit bg-blue-default hover:bg-aqua-default transition-all ease-in-out duration-500 before:left-[15%]"
+								className="relative px-6 py-2 text-white text-tiny w-fit bg-blue-default hover:bg-blue-default transition-all ease-in-out duration-500 before:left-[15%]"
 								style={{
 									clipPath: `polygon(95% 0, 100% 15%, 100% 100%, 0 100%, 0 0)`,
 								}}

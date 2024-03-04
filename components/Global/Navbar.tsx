@@ -81,7 +81,7 @@ const Navbar: FC = () => {
 							viewport={{once: true}}
 							className="hidden lg:flex items-center justify-center gap-6"
 						>
-							<div className="flex items-center justify-center w-8 h-8 rounded-full bg-aqua-two sm:mr-1">
+							<div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-two sm:mr-1">
 								<svg
 									viewBox="0 0 24 24"
 									fill="none"
@@ -111,7 +111,7 @@ const Navbar: FC = () => {
 									href={`tel:${globalContext?.themesOptionsContent?.phoneNumber}`}
 								>
 									<span className="">Call Us:</span>
-									<span className="hover:underline hover:text-aqua-default">
+									<span className="hover:underline hover:text-blue-default">
 										{globalContext?.themesOptionsContent?.phoneNumber}
 									</span>
 								</Link>
@@ -127,7 +127,7 @@ const Navbar: FC = () => {
 							viewport={{once: true}}
 							className="hidden lg:flex items-center justify-center gap-6"
 						>
-							<div className="flex items-center justify-center w-8 h-8 rounded-full bg-aqua-two sm:mr-1">
+							<div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-two sm:mr-1">
 								<svg
 									fill="#ffffff"
 									height="200px"
@@ -211,7 +211,7 @@ const Navbar: FC = () => {
 														<div className="flex flex-row justify-center items-center gap-2 cursor-pointer">
 															<Link
 																href={`${item?.node?.url}`}
-																className="font-bold text-pureBlack group-hover:text-aqua-two text-tiny text-center"
+																className="font-bold text-pureBlack group-hover:text-blue-two text-tiny text-center"
 															>
 																{item?.node?.label}
 															</Link>
@@ -246,7 +246,7 @@ const Navbar: FC = () => {
 													>
 														<Link
 															href={`${item?.node?.url}`}
-															className="py-6 px-8 font-bold text-pureBlack hover:text-aqua-two text-tiny text-center"
+															className="py-6 px-8 font-bold text-pureBlack hover:text-blue-two text-tiny text-center"
 														>
 															{item?.node?.label}
 														</Link>
@@ -263,7 +263,7 @@ const Navbar: FC = () => {
 						<div className="opacity-0 xl:hidden" />
 					</div>
 					<Link href="/contact" target="">
-						<div className="py-6 pl-4 pr-10 cursor-pointer bg-aqua-default hover:bg-orange-default transition-all ease-in-out duration-500">
+						<div className="py-6 pl-4 pr-10 cursor-pointer bg-blue-default hover:bg-blue-dark transition-all ease-in-out duration-500">
 							<span className="relative flex items-center justify-center pl-4 text-lightGrey text-tiny text-center font-semibold">
 								Get a quote today
 								<Image

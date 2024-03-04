@@ -75,7 +75,7 @@ const EmailFooter: React.FC<IEmailFooter.IEmailFooter> = ({
 export default EmailFooter;
 
 const link: IEmailFooter.ILink = {
-	color: "#20ce88",
+	color: "#11acff",
 	textDecoration: "underline",
 };
 

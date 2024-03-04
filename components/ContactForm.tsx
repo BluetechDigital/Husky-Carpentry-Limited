@@ -192,7 +192,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 							viewport={{once: true}}
 							className="flex mb-6 items-center"
 						>
-							<div className="hidden sm:flex flex-shrink-0 mr-5 sm:mr-8 items-center justify-center p-1 w-10 h-10 rounded-full bg-aqua-default">
+							<div className="hidden sm:flex flex-shrink-0 mr-5 sm:mr-8 items-center justify-center p-1 w-10 h-10 rounded-full bg-blue-default">
 								<svg
 									viewBox="0 0 24 24"
 									fill="none"
@@ -233,13 +233,13 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									Phone
 								</motion.h3>
 								<Link
-									className="block text-tiny sm:text-base text-black text-center sm:text-left hover:text-aqua-default"
+									className="block text-tiny sm:text-base text-black text-center sm:text-left hover:text-blue-default"
 									href={`tel:${globalContext?.themesOptionsContent?.phoneNumber}`}
 								>
 									{globalContext?.themesOptionsContent?.phoneNumber}
 								</Link>
 								<Link
-									className="block text-tiny sm:text-base text-black text-center sm:text-left hover:text-aqua-default"
+									className="block text-tiny sm:text-base text-black text-center sm:text-left hover:text-blue-default"
 									href={`tel:${globalContext?.themesOptionsContent?.phoneNumberTwo}`}
 								>
 									{globalContext?.themesOptionsContent?.phoneNumberTwo}
@@ -253,7 +253,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 							viewport={{once: true}}
 							className="flex mb-6 items-center"
 						>
-							<div className="hidden sm:flex flex-shrink-0 mr-5 sm:mr-8 items-center justify-center p-1 w-10 h-10 rounded-full bg-aqua-default">
+							<div className="hidden sm:flex flex-shrink-0 mr-5 sm:mr-8 items-center justify-center p-1 w-10 h-10 rounded-full bg-blue-default">
 								<svg
 									width="20"
 									height="20"
@@ -289,7 +289,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 								<Link
 									className={
 										globalContext?.themesOptionsContent?.email
-											? "block text-tiny sm:text-base text-black text-center sm:text-left hover:text-aqua-default"
+											? "block text-tiny sm:text-base text-black text-center sm:text-left hover:text-blue-default"
 											: "hidden"
 									}
 									href={`mailto:${globalContext?.themesOptionsContent?.email}`}
@@ -299,7 +299,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 								<Link
 									className={
 										globalContext?.themesOptionsContent?.email
-											? "block text-tiny sm:text-base text-black text-center sm:text-left hover:text-aqua-default"
+											? "block text-tiny sm:text-base text-black text-center sm:text-left hover:text-blue-default"
 											: "hidden"
 									}
 									href={`mailto:${globalContext?.themesOptionsContent?.emailTwo}`}
@@ -315,7 +315,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 							viewport={{once: true}}
 							className="flex items-center"
 						>
-							<div className="hidden sm:flex flex-shrink-0 mr-5 sm:mr-8 items-center justify-center p-1 w-10 h-10  rounded-full bg-aqua-default">
+							<div className="hidden sm:flex flex-shrink-0 mr-5 sm:mr-8 items-center justify-center p-1 w-10 h-10  rounded-full bg-blue-default">
 								<svg
 									fill="#000000"
 									className="w-5 h-5"
@@ -387,7 +387,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									viewport={{once: true}}
 									className="flex items-center justify-center my-4 mb-8 gap-x-2"
 								>
-									<h3 className="text-xl font-semibold text-center uppercase text-aqua-default">
+									<h3 className="text-xl font-semibold text-center uppercase text-blue-default">
 										Message Sent!
 									</h3>
 								</motion.div>
@@ -619,7 +619,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									viewport={{once: true}}
 								>
 									<ReCAPTCHA
-										sitekey={`6LdhQXMpAAAAAM8HcXfwQs2JOgVKLeNaKPYgYQvF`}
+										sitekey={`6LdhwIgpAAAAAOsHrSP7tTFEo0VbZetqF-mGwrr_`}
 										onChange={handleReCaptchaChange}
 									/>
 								</motion.div>

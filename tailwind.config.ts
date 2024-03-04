@@ -41,16 +41,15 @@ const config: Config = {
 
 			// Main colors
 			blue: {
-				default: "#116dff",
-				two: "#045dec",
-				three: "#0a52c5",
-				dark: "#001e57",
-				darker: "#001640",
-				darkerTwo: "#09101f",
+				default: "#11acff",
+				two: "#11acff",
+				three: "#11acff",
+				dark: "#027bbd",
+				darker: "#015b8b",
 			},
-			aqua: {
-				default: "#20ce88",
-				two: "#09c87c",
+			accent: {
+				default: "#11acff",
+				two: "#11acff",
 			},
 		},
 	},

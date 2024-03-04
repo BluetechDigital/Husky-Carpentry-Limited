@@ -66,7 +66,7 @@ const ErrorPage: FC<IErrorPage> = ({
 								target={buttonLink?.target}
 								className={buttonLink?.url ? "block" : "hidden"}
 							>
-								<div className="py-6 pl-4 pr-10 cursor-pointer bg-aqua-default hover:bg-orange-default transition-all ease-in-out duration-500">
+								<div className="py-6 pl-4 pr-10 cursor-pointer bg-blue-default hover:bg-blue-dark transition-all ease-in-out duration-500">
 									<span className="relative flex items-center justify-center pl-4 text-lightGrey text-tiny text-center">
 										{buttonLink?.title}
 										<Image
