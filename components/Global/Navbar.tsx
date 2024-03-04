@@ -56,7 +56,7 @@ const Navbar: FC = () => {
 		<>
 			<nav className={styles.navbar + ` z-[999] h-fit w-full fixed`}>
 				<NoticeInfoBanner />
-				<div className="flex p-0 bg-white">
+				<div className="flex p-0 bg-white border-t-4 border-solid border-blue-default">
 					<div className="container mx-auto bg-white w-full lg:w-[40%]">
 						<Link href="/">
 							<Image
@@ -65,16 +65,11 @@ const Navbar: FC = () => {
 								height={500}
 								alt="Husky Carpentry Limited Logo"
 								src="/img/logos/husky-carpentry-logo.png"
-								className="object-contain object-center w-full h-[85px] lg:h-[100px]"
+								className="object-contain object-center w-full h-[65px] lg:h-[75px]"
 							/>
 						</Link>
 					</div>
-					<div
-						className="bg-blue-default py-2 lg:pb-5 2xl:pb-11 px-6 xl:px-16 2xl:px-28 w-full lg:w-[60%] flex justify-start gap-8 2xl:gap-12 xl:gap-24"
-						style={{
-							clipPath: `polygon(3% 0, 100% 0%, 100% 100%, 0 100%)`,
-						}}
-					>
+					<div className="py-2 lg:pb-5 2xl:pb-11 px-6 xl:px-16 2xl:px-28 w-full lg:w-[60%] flex justify-start gap-8 2xl:gap-12 xl:gap-24">
 						<motion.div
 							initial={initialTwo}
 							whileInView={fadeIn}
@@ -107,7 +102,7 @@ const Navbar: FC = () => {
 							</div>
 							<div className="flex flex-col items-baseline justify-center">
 								<Link
-									className="font-semibold text-tiny tracking-wide text-lightGrey"
+									className="font-semibold text-tiny tracking-wide text-black"
 									href={`tel:${globalContext?.themesOptionsContent?.phoneNumber}`}
 								>
 									<span className="">Call Us:</span>
@@ -117,7 +112,7 @@ const Navbar: FC = () => {
 								</Link>
 								<Paragraph
 									content={"Monday - Saturday"}
-									tailwindStyling="px-4 lg:px-0 max-w-full lg:max-w-xl text-tiny text-lightGrey text-center lg:text-left"
+									tailwindStyling="px-4 lg:px-0 max-w-full lg:max-w-xl text-tiny text-black text-center lg:text-left"
 								/>
 							</div>
 						</motion.div>
@@ -160,7 +155,7 @@ const Navbar: FC = () => {
 							<div className="flex flex-col items-baseline justify-center">
 								<Paragraph
 									content={globalContext?.themesOptionsContent?.address}
-									tailwindStyling="px-4 lg:px-0 max-w-[250px] text-tiny text-lightGrey text-center lg:text-left"
+									tailwindStyling="px-4 lg:px-0 max-w-[250px] text-tiny text-black text-center lg:text-left"
 								/>
 							</div>
 						</motion.div>

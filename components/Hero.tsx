@@ -22,7 +22,7 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 	return (
 		<>
 			<div className={styles.hero + " relative z-50 flex flex-col h-fit"}>
-				<div className="lg:relative pt-[85px] lg:pt-[100px] flex flex-col lg:flex-row">
+				<div className="lg:relative pt-[75px] flex flex-col lg:flex-row">
 					<div className={styles.heroSlider + ` relative overflow-hidden`}>
 						<Swiper
 							loop={true}
