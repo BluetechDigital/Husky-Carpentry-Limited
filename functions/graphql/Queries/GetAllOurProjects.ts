@@ -50,7 +50,7 @@ export const getAllOurProjectsContent = async () => {
 							date
 							excerpt
 							title(format: RENDERED)
-							OurImage {
+							featuredImage {
 								node {
 									altText
 									sourceUrl

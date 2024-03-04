@@ -34,25 +34,6 @@ export const getThemesOptionsContent = async () => {
 										width
 									}
 								}
-								menuColumnThree {
-									text
-									checkatrade {
-										altText
-										sourceUrl
-										mediaDetails {
-											height
-											width
-										}
-									}
-									mainImage {
-										altText
-										sourceUrl
-										mediaDetails {
-											height
-											width
-										}
-									}
-								}
 							}
 						}
 					}

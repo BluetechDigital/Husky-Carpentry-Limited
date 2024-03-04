@@ -145,7 +145,15 @@ const TestimonialsSlider: FC = () => {
 													}`}
 												>
 													<Paragraph
-														content={item?.node?.testimonialReview?.paragraph}
+														content={
+															item?.node?.testimonialReview?.paragraph?.length >
+															200
+																? item?.node?.testimonialReview?.paragraph?.substring(
+																		0,
+																		200
+																  ) + "..."
+																: item?.node?.testimonialReview?.paragraph
+														}
 														tailwindStyling="max-w-md xl:max-w-xl mx-auto lg:mx-0 text-base text-darkGrey leading-relaxed text-center lg:text-left"
 													/>
 												</div>

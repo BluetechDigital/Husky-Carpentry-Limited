@@ -41,9 +41,9 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 							<Image
 								width={500}
 								height={500}
-								alt="Awl Carpentry Developments Logo White"
+								alt="Husky Carpentry Limited Logo White"
 								className="object-contain object-center w-full h-[85px]"
-								src="/svg/logos/awl-carpentry-developments-logo-white.svg"
+								src="/img/logos/husky-carpentry-logo.png"
 							/>
 						</Link>
 						<button

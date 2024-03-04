@@ -133,10 +133,6 @@ export type IMaintenance = {
 		};
 	};
 };
-export type IContactInfo = {
-	title: string;
-	paragraph: string;
-};
 export type ITitleParagraph = {
 	title: string;
 	paragraph: string;

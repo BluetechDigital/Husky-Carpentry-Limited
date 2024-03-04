@@ -63,8 +63,8 @@ const Navbar: FC = () => {
 								priority
 								width={500}
 								height={500}
-								alt="Awl Carpentry Developments Logo"
-								src="/svg/logos/awl-carpentry-developments-logo-color-darkblue.svg"
+								alt="Husky Carpentry Limited Logo"
+								src="/img/logos/husky-carpentry-logo.png"
 								className="object-contain object-center w-full h-[85px] lg:h-[100px]"
 							/>
 						</Link>

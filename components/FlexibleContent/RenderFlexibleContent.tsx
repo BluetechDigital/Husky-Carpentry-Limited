@@ -9,7 +9,6 @@ import Hero from "../Hero";
 import HeroTwo from "../HeroTwo";
 import Gallery from "../Gallery";
 import OurClients from "../OurClients";
-import ContactInfo from "../ContactInfo";
 import OurServices from "../OurServices";
 import ContactForm from "../ContactForm";
 import OurLocation from "../OurLocation";
@@ -141,10 +140,6 @@ const RenderFlexibleContent: FC = () => {
 									buttonLink={item?.buttonLink}
 									backgroundImage={item?.backgroundImage?.sourceUrl}
 								/>
-							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_ContactInfo` ? (
-							<>
-								<ContactInfo title={item?.title} paragraph={item?.paragraph} />
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_ContactForm` ? (
 							<>

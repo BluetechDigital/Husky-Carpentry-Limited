@@ -12,7 +12,7 @@ const EmailHeader: React.FC<IEmailHeader.IEmailHeader> = ({imagesDirUrl}) => {
 					height="105"
 					style={logo}
 					src={imagesDirUrl}
-					alt="AWL Carpentry Developments Ltd Logo"
+					alt="Husky Carpentry Limited Ltd Logo"
 				/>
 			</Section>
 			<Section style={{border: "5px solid", borderColor: "#116dff"}}></Section>

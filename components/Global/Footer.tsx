@@ -43,8 +43,8 @@ const Footer: FC = () => {
 								priority
 								width={500}
 								height={500}
-								alt="Awl Carpentry Developments Logo"
-								src="/svg/logos/awl-carpentry-developments-logo-white.svg"
+								alt="Husky Carpentry Limited Logo"
+								src="/img/logos/husky-carpentry-logo.png"
 								className="object-contain object-center mx-auto lg:mx-0 w-fit h-[125px] sm:h-[115px]"
 							/>
 						</Link>
