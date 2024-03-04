@@ -30,10 +30,9 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 						initial={initial}
 						whileInView={fadeInUp}
 						viewport={{once: true}}
-						className="bg-blue-darker group-hover:bg-orange-darker relative px-4 py-6 lg:py-12 h-[250px] bg-center bg-no-repeat bg-cover transition-all duration-500 ease-in-out border-solid border-b-[15px] border-l-[15px] border-blue-default"
+						className="bg-blue-darker group-hover:bg-orange-darker relative px-4 py-6 lg:py-12 h-[250px] bg-center bg-no-repeat bg-cover transition-all duration-500 ease-in-out"
 						style={{
 							backgroundImage: `url("${image?.sourceUrl}")`,
-							clipPath: `polygon(0 6%, 7% 0, 100% 0, 100% 100%, 7% 100%, 0 94%)`,
 						}}
 					>
 						<motion.div
@@ -41,7 +40,7 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 							variants={stagger}
 							whileInView="animate"
 							viewport={{once: true}}
-							className="absolute -bottom-6 right-4"
+							className="absolute -bottom-2 right-2"
 						>
 							<div className="flex justify-end gap-4 mb-4">
 								<div className="flex items-center justify-center text-white text-tiny pl-4 w-fit h-12 bg-blue-default hover:bg-blue-dark">

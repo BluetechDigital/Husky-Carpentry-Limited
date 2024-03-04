@@ -24,11 +24,8 @@ const Footer: FC = () => {
 		<footer
 			className={
 				styles.footer +
-				" py-4 px-0 overflow-hidden bg-blue-darker bg-cover bg-center bg-no-repeat"
+				" py-4 px-0 overflow-hidden bg-pureBlack bg-cover bg-center bg-no-repeat"
 			}
-			style={{
-				backgroundImage: `url("/svg/background/layered-peaks-haikei-blue-bluedarker.svg")`,
-			}}
 		>
 			<div className="container px-4 mx-auto">
 				<div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-4 gap-16 lg:gap-4">
@@ -363,7 +360,7 @@ const Footer: FC = () => {
 					</div>
 				</div>
 				<div className="border-b border-blue-default my-2 opacity-50" />
-				<div className="flex flex-col-reverse items-center justify-between py-4 m-0 lg:-my-6 lg:flex-row">
+				<div className="flex flex-col-reverse items-center justify-between py-4 my-0 lg:-my-6 lg:flex-row">
 					<motion.div
 						initial={initial}
 						variants={stagger}
@@ -396,7 +393,7 @@ const Footer: FC = () => {
 							</span>
 						</Link>
 					</motion.div>
-					<ul className="flex flex-col sm:flex-row -m-6 w-auto gap-2 sm:gap-6 p-6">
+					<ul className="flex flex-col sm:flex-row lg:-m-6 w-auto gap-4 lg:gap-2 sm:gap-6 p-6">
 						{globalContext?.copyrightLinks?.length > 0 ? (
 							globalContext?.copyrightLinks?.map((item: any, keys: number) => (
 								<Fragment key={keys}>

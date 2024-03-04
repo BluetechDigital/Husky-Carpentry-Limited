@@ -8,9 +8,6 @@
 			@apply font-semibold underline text-blue-two hover:text-blue-two transition-all ease-in-out duration-500;
 		}
 	}
-	.card {
-		clip-path: polygon(94% 0, 100% 6%, 100% 100%, 0 100%, 0 0);
-	}
 
 	.card:hover {
 		// transform: scale(1.02);

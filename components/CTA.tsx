@@ -124,24 +124,24 @@ const CTA: FC<ICTA> = ({title, paragraph, buttonLink, backgroundImage}) => {
 							</motion.h3>
 							<Paragraph
 								content={paragraph}
-								tailwindStyling="mb-12 lg:mb-0 text-black text-base text-center lg:text-left"
+								tailwindStyling="mb-6 lg:mb-0 text-black text-base text-center lg:text-left"
 							/>
 							<Link
 								href={`${buttonLink?.url}`}
 								target={buttonLink?.target}
 								className={`${buttonLink?.url ? "block" : "hidden"} lg:hidden`}
 							>
-								<div className="py-6 pl-4 pr-10 w-fit mx-auto lg:mx-0 cursor-pointer bg-blue-default hover:bg-blue-dark transition-all ease-in-out duration-500">
-									<span className="relative flex items-center justify-center font-semibold uppercase pl-4 text-lightGrey text-tiny text-center">
+								<div className="py-4 pl-4 pr-10 w-fit mx-auto lg:mx-0 cursor-pointer bg-blue-default hover:bg-blue-dark transition-all ease-in-out duration-500">
+									<h3 className="relative flex items-center justify-center uppercase pl-4 text-lightGrey text-tiny text-center">
 										{buttonLink?.title}
 										<Image
 											width={550}
 											height={550}
 											alt="Black Arrow Icon"
 											src="/svg/navigation-menu-dropdown-arrow-white.svg"
-											className="my-auto ml-2 absolute top-[-25px] right-[-40px] rotate-[-135deg] cursor-pointer w-[35px] h-[35px] object-contain object-center"
+											className="my-auto ml-2 absolute top-[-20px] right-[-40px] rotate-[-135deg] cursor-pointer w-[35px] h-[35px] object-contain object-center"
 										/>
-									</span>
+									</h3>
 								</div>
 							</Link>
 						</div>

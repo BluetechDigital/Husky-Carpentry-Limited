@@ -10,6 +10,7 @@ import {
 } from "../animations/animations";
 import {FC} from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {motion} from "framer-motion";
 import {ITitleContentImage} from "@/types/components";
 
@@ -118,12 +119,24 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 								<Link
 									href={`${buttonLink?.url}`}
 									target={buttonLink?.target}
-									className={`px-8 py-3 text-tiny ${buttonColor} ${buttonHoverColor} text-white uppercase transition-all duration-200 ease-in-out`}
-									style={{
-										clipPath: `polygon(94% 0, 100% 15%, 100% 100%, 0 100%, 0 0)`,
-									}}
+									className={`${
+										buttonLink?.url ? "block" : "hidden"
+									} lg:hidden`}
 								>
-									{buttonLink?.title}
+									<div
+										className={`py-4 pl-4 pr-10 w-fit mx-auto lg:mx-0 cursor-pointer ${buttonColor} ${buttonHoverColor} transition-all ease-in-out duration-500`}
+									>
+										<h3 className="relative flex items-center justify-center uppercase pl-4 text-lightGrey text-tiny text-center">
+											{buttonLink?.title}
+											<Image
+												width={550}
+												height={550}
+												alt="Black Arrow Icon"
+												src="/svg/navigation-menu-dropdown-arrow-white.svg"
+												className="my-auto ml-2 absolute top-[-20px] right-[-40px] rotate-[-135deg] cursor-pointer w-[35px] h-[35px] object-contain object-center"
+											/>
+										</h3>
+									</div>
 								</Link>
 							</div>
 						</motion.div>
