@@ -25,7 +25,7 @@ const TestimonialsSlider: FC = () => {
 			<div
 				className={
 					styles.testimonialsSlider +
-					` px-0 py-4 overflow-x-hidden bg-white border-t-[15px] border-solid border-blue-default`
+					` px-0 py-8 overflow-x-hidden bg-white border-t-[15px]`
 				}
 			>
 				<div className="container px-4 mx-auto">
@@ -36,7 +36,7 @@ const TestimonialsSlider: FC = () => {
 							centeredSlides={true}
 							modules={[Autoplay, Navigation]}
 							autoplay={{
-								delay: 3000,
+								delay: 6000,
 								disableOnInteraction: false,
 							}}
 							className="mySwiper"
@@ -45,43 +45,13 @@ const TestimonialsSlider: FC = () => {
 								globalContext?.testimonials?.map((item: any, keys: number) => (
 									<Fragment key={keys}>
 										<SwiperSlide>
-											<div
-												className={
-													item?.node?.testimonialReview?.paragraph
-														? `mx-auto px-4 lg:px-0 flex flex-col lg:flex-row items-center justify-center ${
-																item?.node?.testimonialReview?.image?.sourceUrl
-																	? "max-w-4xl"
-																	: "max-w-6xl gap-lg:gap-12"
-														  }`
-														: "hidden"
-												}
-											>
-												<div
-													className={`relative w-full mb-6 lg:mb-0 flex flex-col lg:flex-row items-center justify-between ${
-														item?.node?.testimonialReview?.image?.sourceUrl
-															? "lg:w-3/5"
-															: "lg:w-2/5"
-													}`}
-												>
-													<div className="hidden lg:block absolute top-0 right-0 mr-20 mt-8">
-														<svg
-															width="204"
-															height="155"
-															viewBox="0 0 204 155"
-															fill="none"
-															xmlns="http://www.w3.org/2000/svg"
-														>
-															<path
-																d="M119.221 155V91.6208L175.519 0H204L166.909 81.1123L195.721 82.7543V155H119.221ZM0 155V91.6208L56.6299 0H85.1104L48.0195 81.1123L76.5 82.7543V155H0Z"
-																fill="#f7f7f7"
-															></path>
-														</svg>
-													</div>
-													<div className="relative flex flex-col lg:flex-row items-center">
+											<div className="max-w-4xl mx-auto pb-28 lg:pb-0">
+												<div className="sm:flex items-center justify-center">
+													<div className="mb-8 sm:mb-0 sm:mr-12 lg:mr-24">
 														<Image
 															className={
 																item?.node?.testimonialReview?.image?.sourceUrl
-																	? "h-52 w-52 mb-6 object-cover object-center"
+																	? "bg-lightGreyTwo mx-auto lg:mx-0 rounded-full w-20 h-20 mb-6 object-cover object-center"
 																	: "hidden"
 															}
 															alt={
@@ -108,42 +78,21 @@ const TestimonialsSlider: FC = () => {
 																	: 500
 															}
 														/>
-														<div
-															className={
-																item?.node?.testimonialReview?.image?.sourceUrl
-																	? "hidden"
-																	: "bg-none lg:h-52 lg:w-52"
-															}
-														/>
-														<div
-															className={`w-full lg:w-auto ${
-																item?.node?.testimonialReview?.image?.sourceUrl
-																	? "md:ml-10"
-																	: "md:ml-0"
-															}`}
+														<h3
+															className={`text-blue-default text-lg lg:text-xl text-center lg:text-left font-semibold mb-1`}
 														>
-															<h3 className="mb-2 max-w-sm lg:max-w-xl text-lg lg:text-xl font-semibold font-heading text-blue-default">
-																{item?.node?.testimonialReview?.name}
-															</h3>
-															<h4
-																className={
-																	item?.node?.testimonialReview?.position
-																		? "text-darkGrey"
-																		: "hidden"
-																}
-															>
-																{item?.node?.testimonialReview?.position}
-															</h4>
-														</div>
+															{item?.node?.testimonialReview?.name}
+														</h3>
+														<h4
+															className={
+																item?.node?.testimonialReview?.position
+																	? "text-base text-darkGrey text-center lg:text-left"
+																	: "hidden"
+															}
+														>
+															{item?.node?.testimonialReview?.position}
+														</h4>
 													</div>
-												</div>
-												<div
-													className={`w-full ml-0 lg:ml-12 ${
-														item?.node?.testimonialReview?.image?.sourceUrl
-															? "lg:w-2/5"
-															: "lg:w-3/5"
-													}`}
-												>
 													<Paragraph
 														content={
 															item?.node?.testimonialReview?.paragraph?.length >
@@ -154,7 +103,7 @@ const TestimonialsSlider: FC = () => {
 																  ) + "..."
 																: item?.node?.testimonialReview?.paragraph
 														}
-														tailwindStyling="max-w-md xl:max-w-xl mx-auto lg:mx-0 text-base text-darkGrey leading-relaxed text-center lg:text-left"
+														tailwindStyling="max-w-full px-6 lg:px-0 lg:max-w-xl mx-auto lg:mx-0 leading-7 text-base text-darkGrey text-center lg:text-left"
 													/>
 												</div>
 											</div>

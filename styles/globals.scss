@@ -79,7 +79,7 @@ h3 {
 
 .swiper-button-prev,
 .swiper-button-next {
-	@apply mt-64 lg:mt-0 w-16 h-16 p-8 border-2 border-blue-darker hover:border-blue-darker text-blue-darker hover:text-blue-darker;
+	@apply mt-64 lg:mt-0 w-16 h-16 rounded-full p-8 border-2 border-blue-default hover:border-blue-darker text-blue-darker hover:text-blue-darker;
 
 	top: 85% !important;
 
