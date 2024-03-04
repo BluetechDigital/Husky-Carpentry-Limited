@@ -19,7 +19,6 @@ import styles from "./../../styles/components/Navbar.module.scss";
 // Components
 import SideMenu from "../Elements/SideMenu";
 import NoticeInfoBanner from "../NoticeInfoBanner";
-import Paragraph from "@/components/Elements/Paragraph";
 
 const Navbar: FC = () => {
 	const globalContext = useGlobalContext();
@@ -57,7 +56,7 @@ const Navbar: FC = () => {
 			<nav className={styles.navbar + ` z-[999] h-fit w-full fixed`}>
 				<NoticeInfoBanner />
 				<div className="flex px-4 py-1 bg-white border-t-4 border-solid border-blue-default">
-					<div className="container mx-auto bg-white w-full lg:w-[40%]">
+					<div className="container mx-auto bg-white w-full lg:w-[20%] xl:w-[40%]">
 						<Link href="/">
 							<Image
 								priority
@@ -69,7 +68,7 @@ const Navbar: FC = () => {
 							/>
 						</Link>
 					</div>
-					<div className="w-full lg:w-[60%] flex justify-start gap-8 2xl:gap-12 xl:gap-24">
+					<div className="w-full lg:w-[80%] xl:w-[60%] flex justify-start gap-8 2xl:gap-12 xl:gap-24">
 						<div className="w-full mx-auto hidden lg:flex items-center justify-center">
 							<div className="hidden lg:flex items-center gap-8">
 								<ul className="flex lg:items-center">
