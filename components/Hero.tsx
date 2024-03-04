@@ -34,6 +34,7 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 								delay: 10000,
 								disableOnInteraction: false,
 							}}
+							className={styles.heroSlider}
 						>
 							{heroSlider?.length > 0 ? (
 								heroSlider?.map((item: any, keys: number) => (
