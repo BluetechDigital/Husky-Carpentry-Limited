@@ -47,32 +47,20 @@ const Footer: FC = () => {
 						</Link>
 						<Paragraph
 							content={globalContext?.themesOptionsContent?.textarea}
-							tailwindStyling="px-4 lg:px-0 max-w-full lg:max-w-sm text-tiny text-black text-center lg:text-left"
+							tailwindStyling={
+								globalContext?.themesOptionsContent?.textarea
+									? "px-4 lg:px-0 max-w-full lg:max-w-sm text-tiny text-black text-center lg:text-left"
+									: "hidden"
+							}
 						/>
-						<div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-0 gap-4 lg:max-w-sm">
-							{globalContext?.themesOptionsContent?.certificationsGallery
-								?.length > 0 ? (
-								globalContext?.themesOptionsContent?.certificationsGallery?.map(
-									(item: any, keys: number) => (
-										<Fragment key={keys}>
-											<Image
-												alt={item?.altText}
-												src={item?.sourceUrl}
-												width={item?.mediaDetails.width}
-												height={item?.mediaDetails.height}
-												className={`${
-													item?.sourceUrl
-														? "w-[175px] h-full md:w-full md:h-full object-contain object-center"
-														: "hidden"
-												}`}
-											/>
-										</Fragment>
-									)
-								)
-							) : (
-								<></>
-							)}
-						</div>
+						<Paragraph
+							content={globalContext?.themesOptionsContent?.businessHours}
+							tailwindStyling={
+								globalContext?.themesOptionsContent?.businessHours
+									? "block px-4 lg:px-0 max-w-full lg:max-w-xl text-tiny text-black text-center lg:text-left"
+									: "hidden"
+							}
+						/>
 					</motion.div>
 					<div className="flex flex-col md:flex-row items-center lg:items-start justify-center gap-6 xl:gap-20">
 						<div className="flex flex-col px-0">
@@ -117,10 +105,6 @@ const Footer: FC = () => {
 								Info
 							</h4>
 							<div className="flex flex-col items-center lg:items-baseline justify-between">
-								<Paragraph
-									content={globalContext?.themesOptionsContent?.businessHours}
-									tailwindStyling="block px-4 lg:px-0 max-w-full lg:max-w-xl text-tiny text-black text-center lg:text-left"
-								/>
 								<motion.div
 									initial={initial}
 									variants={stagger}
@@ -269,7 +253,7 @@ const Footer: FC = () => {
 										</Link>
 									</div>
 								</motion.div>
-								<div className="flex items-center justify-center mt-4 gap-4 text-center">
+								<div className="flex items-center justify-center my-4 gap-4 text-center">
 									<Link
 										className="inline-block px-1 hover:opacity-70"
 										href={`${globalContext?.themesOptionsContent?.facebookLink}`}
@@ -354,6 +338,30 @@ const Footer: FC = () => {
 											</g>
 										</svg>
 									</Link>
+								</div>
+								<div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-0 gap-4 lg:max-w-sm">
+									{globalContext?.themesOptionsContent?.certificationsGallery
+										?.length > 0 ? (
+										globalContext?.themesOptionsContent?.certificationsGallery?.map(
+											(item: any, keys: number) => (
+												<Fragment key={keys}>
+													<Image
+														alt={item?.altText}
+														src={item?.sourceUrl}
+														width={item?.mediaDetails.width}
+														height={item?.mediaDetails.height}
+														className={`${
+															item?.sourceUrl
+																? "w-[175px] h-full md:w-full md:h-full object-contain object-center"
+																: "hidden"
+														}`}
+													/>
+												</Fragment>
+											)
+										)
+									) : (
+										<></>
+									)}
 								</div>
 							</div>
 						</div>
