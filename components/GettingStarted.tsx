@@ -65,7 +65,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 										initial={initial}
 										whileInView={fadeInUp}
 										viewport={{once: true}}
-										className="text-center lg:text-left text-lg lg:text-2xl uppercase text-black mb-6"
+										className="text-center lg:text-left text-medium md:text-lg uppercase text-black mb-6"
 									>
 										{stepOne?.title}
 									</motion.h3>
@@ -102,7 +102,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 										initial={initial}
 										whileInView={fadeInUp}
 										viewport={{once: true}}
-										className="text-center lg:text-left text-lg lg:text-2xl uppercase text-black mb-6"
+										className="text-center lg:text-left text-medium md:text-lg uppercase text-black mb-6"
 									>
 										{stepTwo?.title}
 									</motion.h3>
@@ -139,7 +139,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 										initial={initial}
 										whileInView={fadeInUp}
 										viewport={{once: true}}
-										className="text-center lg:text-left text-lg lg:text-2xl uppercase text-black mb-6"
+										className="text-center lg:text-left text-medium md:text-lg uppercase text-black mb-6"
 									>
 										{stepThree?.title}
 									</motion.h3>

@@ -119,9 +119,7 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 								<Link
 									href={`${buttonLink?.url}`}
 									target={buttonLink?.target}
-									className={`${
-										buttonLink?.url ? "block" : "hidden"
-									} lg:hidden`}
+									className={`${buttonLink?.url ? "block" : "hidden"}`}
 								>
 									<div
 										className={`py-4 pl-4 pr-10 w-fit mx-auto lg:mx-0 cursor-pointer ${buttonColor} ${buttonHoverColor} transition-all ease-in-out duration-500`}

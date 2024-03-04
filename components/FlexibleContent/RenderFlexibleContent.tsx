@@ -35,7 +35,6 @@ const RenderFlexibleContent: FC = () => {
 								<Hero
 									title={item?.title}
 									paragraph={item?.paragraph}
-									servicesLinks={item?.servicesLinks}
 									backgroundImage={item?.backgroundImage}
 								/>
 							</>

@@ -20,23 +20,6 @@ export type IHero = {
 			height: number;
 		};
 	};
-	servicesLinks: [
-		{
-			icon: {
-				altText: string;
-				sourceUrl: string;
-				mediaDetails: {
-					width: number;
-					height: number;
-				};
-			};
-			buttonLink: {
-				url: string;
-				title: string;
-				target: string;
-			};
-		}
-	];
 };
 export type IHeroTwo = {
 	title: string;
