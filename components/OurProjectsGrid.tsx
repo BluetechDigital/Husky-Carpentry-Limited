@@ -54,7 +54,7 @@ const OurProjectsGrid: FC<IOurProjectsGrid> = ({
 						contentType="OurProjectsCard"
 						numberOfItemsRenderedPerPage={12}
 						contentArray={globalContext?.ourProjects}
-						tailwindStyling={`grid py-6 px-0 sm:px-4 lg:-m-4 gap-y-12 sm:gap-8 grid-cols-1 md:grid-cols-2`}
+						tailwindStyling={`grid py-6 px-0 sm:px-4 lg:-m-4 gap-y-12 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}
 					/>
 				</div>
 			</div>

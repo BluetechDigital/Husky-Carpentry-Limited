@@ -12,7 +12,7 @@ const NoticeInfoBanner: FC = () => {
 			<div
 				className={
 					globalContext?.themesOptionsContent?.displayNoticeBanner
-						? "w-full z-[999] p-1 bg-orange-default"
+						? "w-full z-[999] p-1 bg-blue-default"
 						: "hidden"
 				}
 			>
