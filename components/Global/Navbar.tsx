@@ -68,7 +68,7 @@ const Navbar: FC = () => {
 							/>
 						</Link>
 					</div>
-					<div className="w-full lg:w-[80%] xl:w-[60%] flex justify-end gap-8 2xl:gap-12 xl:gap-24">
+					<div className="w-full lg:w-full xl:w-[60%] flex justify-end gap-8 2xl:gap-12 xl:gap-24">
 						<div className="hidden lg:flex items-center justify-end">
 							<div className="hidden lg:flex items-center gap-8">
 								<ul className="flex lg:items-center">
