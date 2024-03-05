@@ -175,7 +175,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 								initial={initial}
 								whileInView={fadeInUp}
 								viewport={{once: true}}
-								className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black text-center lg:text-left font-extrabold text-lg md:text-xl"
+								className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black text-center lg:text-left font-semibold text-lg md:text-xl"
 							>
 								{title}
 							</motion.h3>
@@ -228,7 +228,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									initial={initial}
 									whileInView={fadeInUp}
 									viewport={{once: true}}
-									className="mb-2 uppercase text-black text-center sm:text-left font-extrabold text-base"
+									className="mb-2 uppercase text-black text-center sm:text-left font-semibold text-base"
 								>
 									Phone
 								</motion.h3>
@@ -282,7 +282,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									initial={initial}
 									whileInView={fadeInUp}
 									viewport={{once: true}}
-									className="mb-2 uppercase text-black text-center sm:text-left font-extrabold text-base"
+									className="mb-2 uppercase text-black text-center sm:text-left font-semibold text-base"
 								>
 									Email
 								</motion.h3>
@@ -352,7 +352,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									initial={initial}
 									whileInView={fadeInUp}
 									viewport={{once: true}}
-									className="mb-2 uppercase text-black text-center sm:text-left font-extrabold text-base"
+									className="mb-2 uppercase text-black text-center sm:text-left font-semibold text-base"
 								>
 									Address
 								</motion.h3>
@@ -414,7 +414,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 										initial={initial}
 										whileInView={fadeInUp}
 										viewport={{once: true}}
-										className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black text-center font-extrabold text-lg md:text-xl"
+										className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black text-center font-semibold text-lg md:text-xl"
 									>
 										Get In Touch
 									</motion.h3>

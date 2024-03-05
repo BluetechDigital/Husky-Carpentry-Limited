@@ -52,12 +52,12 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 															),url("${item?.backgroundImage?.sourceUrl}")`,
 													}}
 												>
-													<div className="max-w-sm lg:max-w-2xl mx-auto lg:mx-0 relative z-10 flex flex-col items-center lg:items-start px-8 sm:px-24">
+													<div className="max-w-sm lg:max-w-3xl mx-auto lg:mx-0 relative z-10 flex flex-col items-center lg:items-start px-8 sm:px-24">
 														<motion.h1
 															initial={initialTwo}
 															whileInView={fadeIn}
 															viewport={{once: true}}
-															className="text-center lg:text-left uppercase text-lg md:text-xl xl:text-3xl text-white font-extrabold xl:leading-[2.5rem]"
+															className="text-center lg:text-left uppercase text-lg md:text-xl lg:text-3xl xl:text-5xl tracking-[0.10rem] text-white font-semibold xl:leading-[2.5rem]"
 														>
 															{item?.title}
 														</motion.h1>
@@ -76,7 +76,7 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 																<div
 																	className={`py-4 pl-4 pr-10 w-full mx-auto lg:mx-0 cursor-pointer bg-blue-default hover:bg-blue-dark transition-all ease-in-out duration-500`}
 																>
-																	<h3 className="relative flex items-center justify-center uppercase pl-4 text-lightGrey text-tiny text-center lg:text-left">
+																	<h3 className="relative flex items-center justify-center font-semibold tracking-[0.10rem] uppercase pl-4 text-lightGrey text-tiny text-center lg:text-left">
 																		{item?.buttonLink?.title}
 																		<Image
 																			width={550}
@@ -98,7 +98,7 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 																<div
 																	className={`py-4 pl-4 pr-10 w-full mx-auto lg:mx-0 cursor-pointer bg-blue-default hover:bg-blue-dark transition-all ease-in-out duration-500`}
 																>
-																	<h3 className="relative flex items-center justify-center uppercase pl-4 text-lightGrey text-tiny text-center lg:text-left">
+																	<h3 className="relative flex items-center justify-center font-semibold tracking-[0.10rem] uppercase pl-4 text-lightGrey text-tiny text-center lg:text-left">
 																		{item?.buttonLinkTwo?.title}
 																		<Image
 																			width={550}

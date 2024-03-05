@@ -43,7 +43,7 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 							className={link?.url ? "absolute -bottom-2 right-2" : "hidden"}
 						>
 							<div className="flex justify-end gap-4 mb-4">
-								<div className="flex items-center justify-center text-white text-tiny pl-4 w-fit h-12 bg-blue-default hover:bg-blue-dark">
+								<h3 className="flex items-center justify-center font-semibold tracking-[0.10rem] text-white text-tiny uppercase pl-4 w-fit h-12 bg-blue-default hover:bg-blue-dark">
 									{link?.title}
 									<Image
 										width={550}
@@ -52,7 +52,7 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 										src="/svg/navigation-menu-dropdown-arrow-white.svg"
 										className="my-auto ml-2 mb-6 rotate-[-135deg] cursor-pointer w-[35px] h-[35px] object-contain object-center"
 									/>
-								</div>
+								</h3>
 							</div>
 						</motion.div>
 					</motion.div>
@@ -62,7 +62,7 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 						initial={initial}
 						whileInView={fadeInUp}
 						viewport={{once: true}}
-						className="text-center text-black uppercase text-paragraph my-3 font-extrabold"
+						className="text-center text-black uppercase text-paragraph my-3 font-semibold"
 					>
 						{title}
 					</motion.h3>
