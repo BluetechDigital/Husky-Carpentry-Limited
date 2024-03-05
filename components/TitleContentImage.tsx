@@ -107,7 +107,7 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 								initial={initialTwo}
 								whileInView={fadeIn}
 								viewport={{once: true}}
-								className={`my-3 max-w-xl mx-auto lg:mx-0 uppercase text-black text-center lg:text-left font-extrabold text-lg md:text-xl ${titleColor}`}
+								className={`my-3 max-w-xl mx-auto lg:mx-0 uppercase text-black text-center lg:text-left font-semibold text-lg md:text-xl ${titleColor}`}
 							>
 								{title}
 							</motion.h3>
@@ -124,7 +124,7 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 									<div
 										className={`py-4 pl-4 pr-10 w-fit mx-auto lg:mx-0 cursor-pointer ${buttonColor} ${buttonHoverColor} transition-all ease-in-out duration-500`}
 									>
-										<h3 className="relative flex items-center justify-center uppercase pl-4 text-lightGrey text-tiny text-center">
+										<h3 className="relative flex items-center justify-center font-semibold tracking-[0.10rem] uppercase pl-4 text-lightGrey text-tiny text-center">
 											{buttonLink?.title}
 											<Image
 												width={550}

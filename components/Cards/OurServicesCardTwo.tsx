@@ -39,7 +39,7 @@ const OurServicesCardTwo: FC<IOurServicesCardTwo> = ({
 					initial={initial}
 					whileInView={fadeInUp}
 					viewport={{once: true}}
-					className="text-center text-black uppercase text-base my-3 font-extrabold mb-2"
+					className="text-center text-black uppercase text-base my-3 font-semibold mb-2"
 				>
 					{title}
 				</motion.h3>

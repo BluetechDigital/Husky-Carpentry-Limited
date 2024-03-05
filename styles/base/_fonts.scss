@@ -10,15 +10,15 @@
 }
 
 @font-face {
-	font-family: BROmegaBlack;
-	src: url("../fonts/BROmega-Black.woff");
+	font-family: WittgensteinRegular;
+	src: url("../fonts/WittgensteinRegular.woff");
 }
 
 @font-face {
-	font-family: ObjectSans;
-	src: url("../fonts/ObjectSans-Heavy.woff");
+	font-family: cattiganLight;
+	src: url("../fonts/cattiganLight.woff");
 }
 
 // Font Stack Properties
-$main: "ObjectSans", sans-serif;
-$body: "PlusJakartaSans", "Inter", sans-serif;
+$main: "cattiganLight", sans-serif;
+$body: "PlusJakartaSans", "PlusJakartaSans", sans-serif;

@@ -36,7 +36,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 						initial={initial}
 						whileInView={fadeInUp}
 						viewport={{once: true}}
-						className="mt-3 mb-10 max-w-xl mx-auto uppercase text-white text-center font-extrabold text-lg md:text-xl"
+						className="mt-3 mb-10 max-w-xl mx-auto uppercase text-white text-center font-semibold text-lg md:text-xl"
 					>
 						{title}
 					</motion.h3>
@@ -65,7 +65,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 										initial={initial}
 										whileInView={fadeInUp}
 										viewport={{once: true}}
-										className="text-center lg:text-left text-medium md:text-lg uppercase text-black mb-6"
+										className="text-center lg:text-left text-medium font-semibold md:text-lg uppercase text-black mb-6"
 									>
 										{stepOne?.title}
 									</motion.h3>
@@ -102,7 +102,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 										initial={initial}
 										whileInView={fadeInUp}
 										viewport={{once: true}}
-										className="text-center lg:text-left text-medium md:text-lg uppercase text-black mb-6"
+										className="text-center lg:text-left text-medium font-semibold md:text-lg uppercase text-black mb-6"
 									>
 										{stepTwo?.title}
 									</motion.h3>
@@ -139,7 +139,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 										initial={initial}
 										whileInView={fadeInUp}
 										viewport={{once: true}}
-										className="text-center lg:text-left text-medium md:text-lg uppercase text-black mb-6"
+										className="text-center lg:text-left text-medium font-semibold md:text-lg uppercase text-black mb-6"
 									>
 										{stepThree?.title}
 									</motion.h3>

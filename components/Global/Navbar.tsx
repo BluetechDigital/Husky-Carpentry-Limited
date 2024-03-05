@@ -89,9 +89,11 @@ const Navbar: FC = () => {
 															<div className="flex flex-row justify-center items-center gap-2 cursor-pointer">
 																<Link
 																	href={`${item?.node?.url}`}
-																	className="font-bold text-pureBlack group-hover:text-blue-two text-tiny text-center"
+																	target={item?.node?.target}
 																>
-																	{item?.node?.label}
+																	<h3 className="font-semibold text-pureBlack group-hover:text-blue-two text-tiny text-center  uppercase tracking-[0.05rem]">
+																		{item?.node?.label}
+																	</h3>
 																</Link>
 																<Image
 																	width={550}
@@ -124,9 +126,11 @@ const Navbar: FC = () => {
 														>
 															<Link
 																href={`${item?.node?.url}`}
-																className="py-0 px-8 font-bold text-pureBlack hover:text-blue-two text-tiny text-center"
+																target={item?.node?.target}
 															>
-																{item?.node?.label}
+																<h3 className="py-0 px-4 font-semibold text-pureBlack hover:text-blue-two text-tiny text-center uppercase tracking-[0.05rem]">
+																	{item?.node?.label}
+																</h3>
 															</Link>
 														</motion.li>
 													)}
@@ -139,8 +143,8 @@ const Navbar: FC = () => {
 								</ul>
 							</div>
 							<Link href="/contact" target="">
-								<div className="py-4 pl-4 pr-10 cursor-pointer bg-blue-default hover:bg-blue-dark transition-all ease-in-out duration-500">
-									<span className="relative flex items-center justify-center pl-4 text-lightGrey text-tiny text-center font-semibold">
+								<div className="py-4 ml-6 pl-4 pr-10 cursor-pointer bg-blue-default hover:bg-blue-dark transition-all ease-in-out duration-500">
+									<h3 className="relative flex items-center justify-center font-semibold tracking-[0.10rem] uppercase pl-4 text-lightGrey text-tiny text-center">
 										Get a quote today
 										<Image
 											width={550}
@@ -149,7 +153,7 @@ const Navbar: FC = () => {
 											src="/svg/navigation-menu-dropdown-arrow-white.svg"
 											className="my-auto ml-2 absolute top-[-20px] right-[-40px] rotate-[-135deg] cursor-pointer w-[35px] h-[35px] object-contain object-center"
 										/>
-									</span>
+									</h3>
 								</div>
 							</Link>
 						</div>
