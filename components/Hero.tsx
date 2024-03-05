@@ -46,9 +46,7 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 													style={{
 														backgroundImage: `linear-gradient(
 																0deg,
-																rgb(0, 0, 0, 0.10),
-																rgba(0, 0, 0, 0.20),
-																rgba(0, 0, 0, 0.50)
+																rgba(0, 0, 0, 0.60)
 															),url("${item?.backgroundImage?.sourceUrl}")`,
 													}}
 												>
