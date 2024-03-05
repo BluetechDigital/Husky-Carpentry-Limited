@@ -43,8 +43,8 @@ const TestimonialsSlider: FC = () => {
 									<Fragment key={keys}>
 										<SwiperSlide>
 											<div className="max-w-4xl mx-auto pb-28 lg:pb-0">
-												<div className="sm:flex items-center justify-center">
-													<div className="mb-8 sm:mb-0 sm:mr-12 lg:mr-24">
+												<div className="lg:flex items-center justify-center">
+													<div className="mb-8 lg:mb-0 lg:mr-12 lg:mr-24">
 														<Image
 															className={
 																item?.node?.testimonialReview?.image?.sourceUrl
@@ -100,7 +100,7 @@ const TestimonialsSlider: FC = () => {
 																  ) + "..."
 																: item?.node?.testimonialReview?.paragraph
 														}
-														tailwindStyling="max-w-full px-6 lg:px-0 lg:max-w-xl mx-auto lg:mx-0 leading-7 text-base text-darkGrey text-center lg:text-left"
+														tailwindStyling="max-w-full px-6 lg:px-0 sm:max-w-lg lg:max-w-md xl:max-w-xl mx-auto lg:mx-0 leading-7 text-base text-darkGrey text-center lg:text-left"
 													/>
 												</div>
 											</div>
