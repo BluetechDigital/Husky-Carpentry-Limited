@@ -47,7 +47,7 @@ const SkillsExperiences: FC<ISkillsExperiences> = ({
 								height={image?.mediaDetails.height}
 								className={`${
 									image?.sourceUrl
-										? "mx-auto xl:mx-0 px-16 lg:px-28 w-full h-[150px] lg:h-[200px] object-cover object-center"
+										? "mx-auto xl:mx-0 px-16 lg:px-28 w-full h-[150px] lg:h-[200px] object-contain object-center"
 										: "hidden"
 								}`}
 							/>
