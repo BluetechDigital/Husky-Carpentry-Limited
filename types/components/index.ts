@@ -205,6 +205,31 @@ export type ITitleContentImage = {
 		};
 	};
 };
+export type IOurServicesGridTwo = {
+	title: string;
+	buttonLink: {
+		url: string;
+		title: string;
+		target: string;
+	};
+	servicesGrid: [
+		{
+			card: {
+				title: string;
+				paragraph: string;
+
+				image: {
+					altText: string;
+					sourceUrl: string;
+					mediaDetails: {
+						width: number;
+						height: number;
+					};
+				};
+			};
+		}
+	];
+};
 
 // Global
 export type ILayout = {
@@ -264,6 +289,18 @@ export type IOurServicesCard = {
 export type ITestimonialsCard = {
 	name: string;
 	position: string;
+	paragraph: string;
+	image: {
+		altText: string;
+		sourceUrl: string;
+		mediaDetails: {
+			width: number;
+			height: number;
+		};
+	};
+};
+export type IOurServicesCardTwo = {
+	title: string;
 	paragraph: string;
 	image: {
 		altText: string;

@@ -40,7 +40,7 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 							variants={stagger}
 							whileInView="animate"
 							viewport={{once: true}}
-							className="absolute -bottom-2 right-2"
+							className={link?.url ? "absolute -bottom-2 right-2" : "hidden"}
 						>
 							<div className="flex justify-end gap-4 mb-4">
 								<div className="flex items-center justify-center text-white text-tiny pl-4 w-fit h-12 bg-blue-default hover:bg-blue-dark">
@@ -57,7 +57,7 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 						</motion.div>
 					</motion.div>
 				</Link>
-				<div className="h-[225px] px-4 py-6">
+				<div className="h-[185px] px-4 py-6">
 					<motion.h3
 						initial={initial}
 						whileInView={fadeInUp}
