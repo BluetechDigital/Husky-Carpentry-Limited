@@ -30,8 +30,12 @@ const CTA: FC<ICTA> = ({title, paragraph, buttonLink, backgroundImage}) => {
 						<div className="py-11 px-9 lg:max-w-xl bg-white">
 							<div className="flex items-center justify-center mb-6 gap-4">
 								<Link
-									className="inline-block px-1 hover:opacity-70"
 									href={`${globalContext?.themesOptionsContent?.facebookLink}`}
+									className={
+										globalContext?.themesOptionsContent?.facebookLink
+											? "inline-block px-1 hover:opacity-70"
+											: "hidden"
+									}
 								>
 									<svg
 										height="100%"
@@ -54,8 +58,12 @@ const CTA: FC<ICTA> = ({title, paragraph, buttonLink, backgroundImage}) => {
 									</svg>
 								</Link>
 								<Link
-									className="inline-block px-1 hover:opacity-70"
 									href={`${globalContext?.themesOptionsContent?.twitterLink}`}
+									className={
+										globalContext?.themesOptionsContent?.twitterLink
+											? "inline-block px-1 hover:opacity-70"
+											: "hidden"
+									}
 								>
 									<svg
 										height="100%"
@@ -78,8 +86,12 @@ const CTA: FC<ICTA> = ({title, paragraph, buttonLink, backgroundImage}) => {
 									</svg>
 								</Link>
 								<Link
-									className="inline-block px-1 hover:opacity-70"
 									href={`${globalContext?.themesOptionsContent?.instagramLink}`}
+									className={
+										globalContext?.themesOptionsContent?.instagramLink
+											? "inline-block px-1 hover:opacity-70"
+											: "hidden"
+									}
 								>
 									<svg
 										viewBox="0 0 24 24"

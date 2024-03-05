@@ -255,8 +255,12 @@ const Footer: FC = () => {
 								</motion.div>
 								<div className="flex items-center justify-center my-4 gap-4 text-center">
 									<Link
-										className="inline-block px-1 hover:opacity-70"
 										href={`${globalContext?.themesOptionsContent?.facebookLink}`}
+										className={
+											globalContext?.themesOptionsContent?.facebookLink
+												? "inline-block px-1 hover:opacity-70"
+												: "hidden"
+										}
 									>
 										<svg
 											height="100%"
@@ -279,8 +283,12 @@ const Footer: FC = () => {
 										</svg>
 									</Link>
 									<Link
-										className="inline-block px-1 hover:opacity-70"
 										href={`${globalContext?.themesOptionsContent?.twitterLink}`}
+										className={
+											globalContext?.themesOptionsContent?.twitterLink
+												? "inline-block px-1 hover:opacity-70"
+												: "hidden"
+										}
 									>
 										<svg
 											height="100%"
@@ -303,8 +311,12 @@ const Footer: FC = () => {
 										</svg>
 									</Link>
 									<Link
-										className="inline-block px-1 hover:opacity-70"
 										href={`${globalContext?.themesOptionsContent?.instagramLink}`}
+										className={
+											globalContext?.themesOptionsContent?.instagramLink
+												? "inline-block px-1 hover:opacity-70"
+												: "hidden"
+										}
 									>
 										<svg
 											viewBox="0 0 24 24"
@@ -339,7 +351,7 @@ const Footer: FC = () => {
 										</svg>
 									</Link>
 								</div>
-								<div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-0 gap-4 lg:max-w-sm">
+								<div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-0 gap-4 lg:max-w-sm">
 									{globalContext?.themesOptionsContent?.certificationsGallery
 										?.length > 0 ? (
 										globalContext?.themesOptionsContent?.certificationsGallery?.map(
