@@ -205,6 +205,23 @@ export type ITitleContentImage = {
 		};
 	};
 };
+export type ISkillsExperiences = {
+	title: string;
+	paragraph: string;
+	image: {
+		altText: string;
+		sourceUrl: string;
+		mediaDetails: {
+			width: number;
+			height: number;
+		};
+	};
+	skillsExperiencesGrid: [
+		{
+			text: string;
+		}
+	];
+};
 export type IOurServicesGridTwo = {
 	title: string;
 	buttonLink: {

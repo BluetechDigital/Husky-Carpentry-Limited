@@ -19,6 +19,7 @@ import Maintenance from "../Global/Maintenance";
 import OurProjectsGrid from "../OurProjectsGrid";
 import TestimonialsGrid from "../TestimonialsGrid";
 import TitleContentImage from "../TitleContentImage";
+import SkillsExperiences from "../SkillsExperiences";
 import TestimonialsSlider from "../TestimonialsSlider";
 import OurServicesGridTwo from "../OurServicesGridTwo";
 
@@ -89,6 +90,16 @@ const RenderFlexibleContent: FC = () => {
 									title={item?.title}
 									buttonLink={item?.buttonLink}
 									servicesGrid={item?.servicesGrid}
+								/>
+							</>
+						) : item?.fieldGroupName ===
+						  `${FlexibleContent}_SkillsExperiences` ? (
+							<>
+								<SkillsExperiences
+									title={item?.title}
+									image={item?.image}
+									paragraph={item?.paragraph}
+									skillsExperiencesGrid={item?.skillsExperiencesGrid}
 								/>
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_OurLocation` ? (

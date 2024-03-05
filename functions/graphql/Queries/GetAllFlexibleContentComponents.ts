@@ -155,6 +155,22 @@ export const getAllFlexibleContentComponents = async (
 													}
             									}
             								}
+											... on ${postTypeFlexibleContent}_SkillsExperiences {
+            									fieldGroupName
+            									title
+            									paragraph
+												image {
+													altText
+													sourceUrl
+													mediaDetails {
+														height
+														width
+													}
+												}
+            									skillsExperiencesGrid {
+            										text
+            									}
+            								}
 											... on ${postTypeFlexibleContent}_OurLocation {
 												fieldGroupName
 												title
