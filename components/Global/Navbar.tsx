@@ -112,7 +112,48 @@ const Navbar: FC = () => {
 																	<div
 																		onMouseLeave={resetNavbarStyling}
 																		onMouseEnter={displayNavBackgroundColor}
-																	></div>
+																	>
+																		<div className="fixed mt-[1.6rem] w-full mx-auto left-0 bg-white flex flex-col items-center justify-center">
+																			<ul
+																				className={
+																					styles.aboutUsSublinks +
+																					" px-28 py-6 w-full grid grid-cols-4 gap-4 border-b-8 border-solid border-blue-default z-[999]"
+																				}
+																			>
+																				{globalContext?.servicesSublinks
+																					?.length > 0 ? (
+																					globalContext?.servicesSublinks?.map(
+																						(item: any, keys: number) => (
+																							<Fragment key={keys}>
+																								<motion.li
+																									custom={keys}
+																									initial={initial}
+																									whileInView="animate"
+																									viewport={{once: true}}
+																									variants={
+																										arrayLoopStaggerChildren
+																									}
+																								>
+																									<Link
+																										href={`${item?.node?.url}`}
+																										className={` ${
+																											ourServicesSublinksOpen
+																												? "w-full hover:bg-blue-default text-center text-black hover:text-white"
+																												: "text-black"
+																										} block p-4 text-tiny`}
+																									>
+																										{item?.node?.label}
+																									</Link>
+																								</motion.li>
+																							</Fragment>
+																						)
+																					)
+																				) : (
+																					<></>
+																				)}
+																			</ul>
+																		</div>
+																	</div>
 																</>
 															) : null}
 														</motion.li>
