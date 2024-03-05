@@ -19,9 +19,9 @@ const HeroTwo: FC<IHeroTwo> = ({title, paragraph, backgroundImage}) => {
 					style={{
 						backgroundImage: `linear-gradient(
 								0deg,
-								rgb(0, 0, 0, 0.10),
+								rgb(0, 0, 0, 0.20),
 								rgba(0, 0, 0, 0.20),
-								rgba(0, 0, 0, 0.50)
+								rgba(0, 0, 0, 0.20)
 							),url("${backgroundImage?.sourceUrl}")`,
 					}}
 				>
