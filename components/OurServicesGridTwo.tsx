@@ -15,7 +15,6 @@ import {IOurServicesGridTwo} from "@/types/components/index";
 import styles from "../styles/components/OurServices.module.scss";
 
 // Components
-import Paragraph from "./Elements/Paragraph";
 import OurServicesCardTwo from "./Cards/OurServicesCardTwo";
 
 const OurServicesGridTwo: FC<IOurServicesGridTwo> = ({
@@ -80,7 +79,7 @@ const OurServicesGridTwo: FC<IOurServicesGridTwo> = ({
 						className={`${buttonLink?.url ? "block" : "hidden"}`}
 					>
 						<div
-							className={`py-4 pl-4 pr-10 w-fit mx-auto lg:mx-0 cursor-pointer bg-blue-default $hover:bg-blue-dark transition-all ease-in-out duration-500`}
+							className={`py-4 pl-4 pr-10 w-fit mx-auto lg:mx-0 cursor-pointer bg-blue-default hover:bg-blue-dark transition-all ease-in-out duration-500`}
 						>
 							<h3 className="relative flex items-center justify-center font-semibold tracking-[0.10rem] uppercase pl-4 text-lightGrey text-tiny text-center">
 								{buttonLink?.title}

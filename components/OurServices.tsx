@@ -57,7 +57,7 @@ const OurServices: FC<IOurServices> = ({
 						</div>
 						<Paragraph
 							content={paragraph}
-							tailwindStyling="text-black text-base text-center lg:text-left"
+							tailwindStyling="max-w-full lg:max-w-xl text-black text-base text-center lg:text-left"
 						/>
 					</motion.div>
 					<div className="w-full relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 py-6 px-0 sm:px-4 gap-6 items-start justify-center">

@@ -42,7 +42,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 								width={500}
 								height={500}
 								alt="Husky Carpentry Limited Logo White"
-								className="object-contain object-center w-full h-[85px]"
+								className="object-contain object-center w-[65px] h-[65px]"
 								src="/img/logos/husky-carpentry-logo.png"
 							/>
 						</Link>

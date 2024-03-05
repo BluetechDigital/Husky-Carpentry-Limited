@@ -18,41 +18,43 @@ const OurProjectsGrid: FC<IOurProjectsGrid> = ({
 
 	return (
 		<>
-			<div className="py-24 bg-white px-4">
+			<div className="pt-12 sm:pt-16 py-4 px-4 bg-white px-4">
 				<div className="container px-0 mx-auto flex flex-col items-center gap-6">
 					<motion.div
 						initial={initial}
 						variants={stagger}
 						whileInView="animate"
 						viewport={{once: true}}
-						className="flex flex-col items-center mb-10"
+						className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full"
 					>
-						<motion.h4
-							initial={initial}
-							whileInView={fadeInUp}
-							viewport={{once: true}}
-							className="max-w-sm mx-auto xl:mx-0 text-center xl:text-left text-base text-blue-default"
-						>
-							{subtitle}
-						</motion.h4>
-						<motion.h3
-							initial={initial}
-							whileInView={fadeInUp}
-							viewport={{once: true}}
-							className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black text-center font-semibold text-lg md:text-xl"
-						>
-							{title}
-						</motion.h3>
+						<div>
+							<motion.h4
+								initial={initial}
+								whileInView={fadeInUp}
+								viewport={{once: true}}
+								className="max-w-sm mx-auto lg:mx-0 text-center lg:text-left text-base text-blue-default"
+							>
+								{subtitle}
+							</motion.h4>
+							<motion.h3
+								initial={initial}
+								whileInView={fadeInUp}
+								viewport={{once: true}}
+								className="my-3 max-w-xl mx-auto lg:mx-0 uppercase text-black text-center lg:text-left font-semibold text-lg lg:text-xl"
+							>
+								{title}
+							</motion.h3>
+						</div>
 						<Paragraph
 							content={paragraph}
-							tailwindStyling="lg:max-w-3xl mx-auto text-black text-base text-center"
+							tailwindStyling="max-w-full lg:max-w-xl text-black text-base text-center lg:text-left"
 						/>
 					</motion.div>
 					<Pagination
 						contentType="OurProjectsCard"
 						numberOfItemsRenderedPerPage={12}
 						contentArray={globalContext?.ourProjects}
-						tailwindStyling={`grid mb-32 px-4 lg:-m-4 gap-y-12 sm:gap-8 grid-cols-1 md:grid-cols-2`}
+						tailwindStyling={`grid py-6 px-0 sm:px-4 lg:-m-4 gap-y-12 sm:gap-8 grid-cols-1 md:grid-cols-2`}
 					/>
 				</div>
 			</div>
