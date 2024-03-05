@@ -242,19 +242,6 @@ export const getAllFlexibleContentComponents = async (
 													sourceUrl
 												}
 											}
-											... on ${postTypeFlexibleContent}_CtaTwo {
-												fieldGroupName
-												title
-												paragraph
-												buttonLink {
-													url
-													title
-													target
-												}
-												backgroundImage {
-													sourceUrl
-												}
-											}
 											... on ${postTypeFlexibleContent}_ContactForm {
 												fieldGroupName
 												title
