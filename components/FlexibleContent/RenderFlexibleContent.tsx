@@ -20,6 +20,7 @@ import OurProjectsGrid from "../OurProjectsGrid";
 import TestimonialsGrid from "../TestimonialsGrid";
 import TitleContentImage from "../TitleContentImage";
 import TestimonialsSlider from "../TestimonialsSlider";
+import OurServicesGridTwo from "../OurServicesGridTwo";
 
 const RenderFlexibleContent: FC = () => {
 	const content = usePageContext();
@@ -78,6 +79,15 @@ const RenderFlexibleContent: FC = () => {
 									title={item?.title}
 									subtitle={item?.subtitle}
 									paragraph={item?.paragraph}
+									servicesGrid={item?.servicesGrid}
+								/>
+							</>
+						) : item?.fieldGroupName ===
+						  `${FlexibleContent}_OurServicesGridTwo` ? (
+							<>
+								<OurServicesGridTwo
+									title={item?.title}
+									buttonLink={item?.buttonLink}
 									servicesGrid={item?.servicesGrid}
 								/>
 							</>

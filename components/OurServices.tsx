@@ -26,12 +26,8 @@ const OurServices: FC<IOurServices> = ({
 		<>
 			<div
 				className={
-					styles.ourServices +
-					" relative py-12 sm:py-16 px-4 bg-white bg-cover bg-center bg-no-repeat"
+					styles.ourServices + " relative pt-12 sm:pt-16 py-4 px-4 bg-white"
 				}
-				style={{
-					backgroundImage: `url("/svg/background/polygon-scatter-haikei-lightgrey-two.svg")`,
-				}}
 			>
 				<div className="container relative m-auto flex flex-col items-center gap-6">
 					<motion.div
@@ -39,27 +35,29 @@ const OurServices: FC<IOurServices> = ({
 						variants={stagger}
 						whileInView="animate"
 						viewport={{once: true}}
-						className="flex flex-col items-center"
+						className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full"
 					>
-						<motion.h4
-							initial={initial}
-							whileInView={fadeInUp}
-							viewport={{once: true}}
-							className="max-w-sm mx-auto xl:mx-0 text-center xl:text-left text-base text-blue-default"
-						>
-							{subtitle}
-						</motion.h4>
-						<motion.h3
-							initial={initial}
-							whileInView={fadeInUp}
-							viewport={{once: true}}
-							className="my-3 max-w-xl mx-auto xl:mx-0 uppercase text-black text-center font-extrabold text-lg md:text-xl"
-						>
-							{title}
-						</motion.h3>
+						<div>
+							<motion.h4
+								initial={initial}
+								whileInView={fadeInUp}
+								viewport={{once: true}}
+								className="max-w-sm mx-auto lg:mx-0 text-center lg:text-left text-base text-blue-default"
+							>
+								{subtitle}
+							</motion.h4>
+							<motion.h3
+								initial={initial}
+								whileInView={fadeInUp}
+								viewport={{once: true}}
+								className="my-3 max-w-xl mx-auto lg:mx-0 uppercase text-black text-center lg:text-left font-extrabold text-lg lg:text-xl"
+							>
+								{title}
+							</motion.h3>
+						</div>
 						<Paragraph
 							content={paragraph}
-							tailwindStyling="lg:max-w-3xl mx-auto text-black text-base text-center"
+							tailwindStyling="text-black text-base text-center lg:text-left"
 						/>
 					</motion.div>
 					<div className="w-full relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 py-6 px-0 sm:px-4 gap-6 items-start justify-center">

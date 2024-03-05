@@ -131,6 +131,29 @@ export const getAllFlexibleContentComponents = async (
 													}
 												}
 											}
+											... on ${postTypeFlexibleContent}_OurServicesGridTwo {
+            									fieldGroupName
+            									title
+            									buttonLink {
+            										url
+            										title
+            										target
+            									}
+            									servicesGrid {
+            									  	card {
+            									  		title
+            									  		paragraph
+            									  		image {
+            									  			altText
+            									  			sourceUrl
+            									  			mediaDetails {
+            									  				height
+            									  				width
+            									  			}
+            									  		}
+													}
+            									}
+            								}
 											... on ${postTypeFlexibleContent}_OurLocation {
 												fieldGroupName
 												title
