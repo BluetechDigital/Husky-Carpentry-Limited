@@ -30,7 +30,7 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 						initial={initial}
 						whileInView={fadeInUp}
 						viewport={{once: true}}
-						className="bg-blue-darker group-hover:bg-orange-darker relative px-4 py-6 lg:py-12 h-[250px] bg-center bg-no-repeat bg-cover transition-all duration-500 ease-in-out"
+						className="bg-blue-darker group-hover:bg-blue-darker relative px-4 py-6 lg:py-12 h-[250px] bg-center bg-no-repeat bg-cover transition-all duration-500 ease-in-out"
 						style={{
 							backgroundImage: `url("${image?.sourceUrl}")`,
 						}}
