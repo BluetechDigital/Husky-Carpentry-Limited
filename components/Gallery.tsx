@@ -21,7 +21,8 @@ const Gallery: FC<IGallery> = ({
 		<>
 			<div
 				className={
-					styles.gallery + ` py-12 sm:py-16 bg-white container px-4 mx-auto`
+					styles.gallery +
+					` pt-12 sm:pt-16 py-4 px-4 bg-white container mx-auto`
 				}
 			>
 				<motion.div
