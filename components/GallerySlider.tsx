@@ -24,6 +24,7 @@ const GallerySlider: FC<IGallerySlider> = ({gallerySlider}) => {
 			<div
 				className={styles.gallerySlider + " relative z-50 flex flex-col h-fit"}
 			>
+				{/* q8ZuN94DSzAv*5lTOnFxx4WX */}
 				<div className="lg:relative flex flex-col lg:flex-row">
 					<div className="relative overflow-hidden">
 						<Swiper
