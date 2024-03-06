@@ -326,6 +326,7 @@ export type IOurServicesCard = {
 };
 export type ITestimonialsCard = {
 	name: string;
+	rating: number;
 	position: string;
 	paragraph: string;
 	image: {
@@ -362,6 +363,9 @@ export type ISideMenu = {
 export type IParagraph = {
 	content: string;
 	tailwindStyling: string;
+};
+export type IRenderStars = {
+	rating: number;
 };
 export type IBackHoverButton = {
 	link: string;

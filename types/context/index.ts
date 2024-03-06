@@ -75,6 +75,7 @@ export type ITestimonials = [
 		node: {
 			testimonialReview: {
 				name: string;
+				rating: number;
 				position: string;
 				paragraph: string;
 				image: {

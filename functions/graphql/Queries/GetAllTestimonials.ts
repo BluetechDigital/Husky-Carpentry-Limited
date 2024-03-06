@@ -15,6 +15,7 @@ export const getAllTestimonialsContent = async () => {
 						node {
 							testimonialReview {
 								name
+								rating
 								position
 								paragraph
 								image {

@@ -86,6 +86,7 @@ const Pagination: FC<IPagination> = ({
 										<TestimonialsCard
 											name={item?.node?.testimonialReview?.name}
 											image={item?.node?.testimonialReview?.image}
+											rating={item?.node?.testimonialReview?.rating}
 											position={item?.node?.testimonialReview?.position}
 											paragraph={item?.node?.testimonialReview?.paragraph}
 										/>
