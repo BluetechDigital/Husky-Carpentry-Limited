@@ -42,8 +42,8 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 								width={500}
 								height={500}
 								alt="Husky Carpentry Limited Logo White"
+								src="/svg/logo/husky-carpentry-logo-white.svg"
 								className="object-contain object-center w-[65px] h-[65px]"
-								src="/img/logos/husky-carpentry-logo.png"
 							/>
 						</Link>
 						<button

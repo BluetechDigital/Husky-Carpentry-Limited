@@ -79,13 +79,21 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 						whileInView={slideInRightFinish}
 						className={`${
 							displayContentOption == "Right"
-								? "bg-center bg-no-repeat bg-cover w-full lg:w-1/2 h-[350px] lg:h-[500px]"
+								? "relative bg-center bg-no-repeat bg-cover w-full lg:w-1/2 h-[350px] lg:h-[500px]"
 								: "hidden"
 						}`}
 						style={{
 							backgroundImage: `url(${image?.sourceUrl})`,
 						}}
-					/>
+					>
+						<Image
+							width={550}
+							height={550}
+							alt="Husky Carpentry Logo White"
+							src="/svg/logo/husky-carpentry-logo-white.svg"
+							className="absolute ml-2 mb-2 bottom-0 left-0 w-[50px] h-[50px] object-contain object-center"
+						/>
+					</motion.div>
 					<motion.div
 						viewport={{once: true}}
 						initial={slideInLeftInitial}
@@ -145,13 +153,21 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 						whileInView={slideInRightFinish}
 						className={`${
 							displayContentOption == "Left"
-								? "bg-center bg-no-repeat bg-cover w-full lg:w-1/2 h-[350px] lg:h-[500px]"
+								? "relative bg-center bg-no-repeat bg-cover w-full lg:w-1/2 h-[350px] lg:h-[500px]"
 								: "hidden"
 						}`}
 						style={{
 							backgroundImage: `url(${image?.sourceUrl})`,
 						}}
-					/>
+					>
+						<Image
+							width={550}
+							height={550}
+							alt="Husky Carpentry Logo White"
+							src="/svg/logo/husky-carpentry-logo-white.svg"
+							className="absolute mr-2 mb-2 bottom-0 right-0 w-[50px] h-[50px] object-contain object-center"
+						/>
+					</motion.div>
 				</div>
 			</div>
 		</>
