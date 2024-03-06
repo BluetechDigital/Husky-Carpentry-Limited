@@ -22,7 +22,9 @@ const Gallery: FC<IGallery> = ({
 			<div
 				className={
 					styles.gallery +
-					` pt-12 sm:pt-16 py-4 px-4 bg-white container mx-auto`
+					` ${
+						title && paragraph ? "pt-12 sm:pt-16" : "pt-4"
+					} py-4 px-4 bg-white container mx-auto`
 				}
 			>
 				<motion.div
