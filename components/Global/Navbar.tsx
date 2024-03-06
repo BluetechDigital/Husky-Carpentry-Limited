@@ -84,12 +84,12 @@ const Navbar: FC = () => {
 															viewport={{once: true}}
 															variants={arrayLoopStaggerChildren}
 															className="relative group py-0 px-8"
-															onClick={displayOurServicesSublinks}
 														>
 															<div className="flex flex-row justify-center items-center gap-2 cursor-pointer">
 																<Link
 																	href={`${item?.node?.url}`}
 																	target={item?.node?.target}
+																	onClick={resetNavbarStyling}
 																>
 																	<h3 className="font-semibold text-pureBlack group-hover:text-blue-two text-tiny text-center  uppercase tracking-[0.05rem]">
 																		{item?.node?.label}
@@ -99,6 +99,7 @@ const Navbar: FC = () => {
 																	width={550}
 																	height={550}
 																	alt="Black Arrow Icon"
+																	onClick={displayOurServicesSublinks}
 																	src="/svg/navigation-menu-dropdown-arrow-black.svg"
 																	className={`${
 																		ourServicesSublinksOpen

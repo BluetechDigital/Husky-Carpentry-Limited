@@ -27,11 +27,7 @@ const OurServicesCardTwo: FC<IOurServicesCardTwo> = ({
 							: "hidden"
 					}
 					alt={image?.altText}
-					src={
-						image?.sourceUrl
-							? image?.sourceUrl
-							: `/img/logos/default-avatar-profile.jpg`
-					}
+					src={image?.sourceUrl}
 					width={image?.mediaDetails?.width}
 					height={image?.mediaDetails?.height}
 				/>

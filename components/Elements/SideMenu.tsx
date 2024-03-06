@@ -37,7 +37,11 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 					}}
 				>
 					<div className="flex items-center justify-between mb-8">
-						<Link className="mr-auto text-3xl font-bold leading-none" href="/">
+						<Link
+							onClick={toggleMenu}
+							className="mr-auto text-3xl font-bold leading-none"
+							href="/"
+						>
 							<Image
 								width={500}
 								height={500}
@@ -72,6 +76,7 @@ const SideMenu: FC<ISideMenu> = ({menuActive, setMenuActive}) => {
 											>
 												<div className="py-4 flex flex-row justify-between items-center gap-2">
 													<Link
+														onClick={toggleMenu}
 														href={item?.node?.url}
 														className="text-white text-tiny text-center tracking-[0.05rem] hover:text-blue-two"
 													>

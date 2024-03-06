@@ -29,12 +29,6 @@ const TestimonialsCard: FC<ITestimonialsCard> = ({
 					<div className="flex flex-col lg:flex-row items-center justify-center gap-6">
 						<Image
 							alt={image?.altText}
-							width={
-								image?.mediaDetails?.width ? image?.mediaDetails?.width : 500
-							}
-							height={
-								image?.mediaDetails?.height ? image?.mediaDetails?.height : 500
-							}
 							src={`${
 								image?.sourceUrl
 									? image?.sourceUrl
@@ -44,6 +38,12 @@ const TestimonialsCard: FC<ITestimonialsCard> = ({
 								image?.sourceUrl
 									? `object-cover object-center w-14 h-14 rounded-full`
 									: `hidden`
+							}
+							width={
+								image?.mediaDetails?.width ? image?.mediaDetails?.width : 500
+							}
+							height={
+								image?.mediaDetails?.height ? image?.mediaDetails?.height : 500
 							}
 						/>
 						<div className={image?.sourceUrl ? "ml-0 lg:ml-2" : "ml-0"}>

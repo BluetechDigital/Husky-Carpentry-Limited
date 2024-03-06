@@ -93,7 +93,7 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 							src="/svg/logo/husky-carpentry-logo-white.svg"
 							className={
 								displayBackgroundIcon
-									? "absolute ml-2 mb-2 bottom-0 left-0 w-[50px] h-[50px] object-contain object-center"
+									? "absolute mr-2 ml-0 lg:mr-0 lg:ml-2 mb-2 bottom-0 right-0 lg:left-0 w-[50px] h-[50px] object-contain object-center"
 									: "hidden"
 							}
 						/>
