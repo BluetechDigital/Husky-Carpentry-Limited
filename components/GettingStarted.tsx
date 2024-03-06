@@ -21,14 +21,14 @@ const GettingStarted: FC<IGettingStarted> = ({
 	return (
 		<>
 			<div
-				className={styles.gettingStarted + ` relative pt-24 pb-4 bg-pureBlack`}
+				className={styles.gettingStarted + ` relative pt-24 pb-4 bg-darkGrey`}
 			>
 				<div className="container px-4 mx-auto">
 					<motion.h4
 						initial={initial}
 						whileInView={fadeInUp}
 						viewport={{once: true}}
-						className="text-center text-base text-blue-default"
+						className="text-center text-base text-white"
 					>
 						{subtitle}
 					</motion.h4>
