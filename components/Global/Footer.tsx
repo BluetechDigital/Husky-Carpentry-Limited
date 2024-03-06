@@ -64,9 +64,9 @@ const Footer: FC = () => {
 					</motion.div>
 					<div className="flex flex-col md:flex-row items-center lg:items-start justify-center gap-6 xl:gap-20">
 						<div className="flex flex-col px-0">
-							<h4 className="mb-5 text-base font-semibold tracking-normal text-center text-black uppercase lg:text-left">
+							<h3 className="mb-5 text-base font-semibold tracking-normal text-center text-black uppercase lg:text-left">
 								About
-							</h4>
+							</h3>
 							<motion.ul
 								initial={initial}
 								variants={stagger}
@@ -101,9 +101,9 @@ const Footer: FC = () => {
 							</motion.ul>
 						</div>
 						<div className="flex flex-col px-0">
-							<h4 className="mb-5 text-base font-semibold tracking-normal text-center text-black uppercase lg:text-left">
+							<h3 className="mb-5 text-base font-semibold tracking-normal text-center text-black uppercase lg:text-left">
 								Info
-							</h4>
+							</h3>
 							<div className="flex flex-col items-center lg:items-baseline justify-between">
 								<motion.div
 									initial={initial}
