@@ -237,6 +237,27 @@ export const getAllFlexibleContentComponents = async (
 													}
 												}
 											}
+											... on ${postTypeFlexibleContent}_GallerySlider {
+												fieldGroupName
+												gallerySlider {
+              										title
+              										paragraph
+													buttonLink {
+                										url
+                										title
+                										target
+                									}
+              										backgroundImage {
+              											altText
+              											sourceUrl
+              											mediaDetails {
+              												height
+              												width
+              											}
+              										}
+													
+              									}
+											}
 											... on ${postTypeFlexibleContent}_TestimonialsSlider {
 												fieldGroupName
 											}

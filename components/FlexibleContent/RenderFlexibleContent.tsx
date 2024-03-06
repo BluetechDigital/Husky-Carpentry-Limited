@@ -13,6 +13,7 @@ import OurServices from "../OurServices";
 import ContactForm from "../ContactForm";
 import OurLocation from "../OurLocation";
 import ErrorPage from "../Global/ErrorPage";
+import GallerySlider from "../GallerySlider";
 import GettingStarted from "../GettingStarted";
 import TitleParagraph from "../TitleParagraph";
 import Maintenance from "../Global/Maintenance";
@@ -133,6 +134,10 @@ const RenderFlexibleContent: FC = () => {
 									paragraph={item?.paragraph}
 									itemsDisplayedPerPage={item?.itemsDisplayedPerPage}
 								/>
+							</>
+						) : item?.fieldGroupName === `${FlexibleContent}_GallerySlider` ? (
+							<>
+								<GallerySlider gallerySlider={item?.gallerySlider} />
 							</>
 						) : item?.fieldGroupName ===
 						  `${FlexibleContent}_TestimonialsSlider` ? (

@@ -130,6 +130,27 @@ export type IMaintenance = {
 		};
 	};
 };
+export type IGallerySlider = {
+	gallerySlider: [
+		{
+			title: string;
+			paragraph: string;
+			buttonLink: {
+				url: string;
+				title: string;
+				target: string;
+			};
+			backgroundImage: {
+				altText: string;
+				sourceUrl: string;
+				mediaDetails: {
+					width: number;
+					height: number;
+				};
+			};
+		}
+	];
+};
 export type ITitleParagraph = {
 	title: string;
 	paragraph: string;
