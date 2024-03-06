@@ -91,7 +91,11 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 							height={550}
 							alt="Husky Carpentry Logo White"
 							src="/svg/logo/husky-carpentry-logo-white.svg"
-							className="absolute ml-2 mb-2 bottom-0 left-0 w-[50px] h-[50px] object-contain object-center"
+							className={
+								displayBackgroundIcon
+									? "absolute ml-2 mb-2 bottom-0 left-0 w-[50px] h-[50px] object-contain object-center"
+									: "hidden"
+							}
 						/>
 					</motion.div>
 					<motion.div
@@ -165,7 +169,11 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 							height={550}
 							alt="Husky Carpentry Logo White"
 							src="/svg/logo/husky-carpentry-logo-white.svg"
-							className="absolute mr-2 mb-2 bottom-0 right-0 w-[50px] h-[50px] object-contain object-center"
+							className={
+								displayBackgroundIcon
+									? "absolute mr-2 mb-2 bottom-0 right-0 w-[50px] h-[50px] object-contain object-center"
+									: "hidden"
+							}
 						/>
 					</motion.div>
 				</div>
