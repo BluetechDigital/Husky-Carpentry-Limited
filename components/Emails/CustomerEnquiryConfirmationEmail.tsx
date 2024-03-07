@@ -42,22 +42,22 @@ export const CustomerEnquiryConfirmationEmail: React.FC<
 				<Body style={main}>
 					<Container style={container}>
 						<EmailHeader
-							imagesDirUrl={`${imagesDirUrl}/Husky-Carpentry-Limited-Email-Header.png`}
+							imagesDirUrl={`${imagesDirUrl}/Husky-Carpentry-Limited-Email-Header-Customer.png`}
 						/>
 						<Section style={content}>
 							<Text style={introParagraph}>Hi {firstName},</Text>
 							<Text style={paragraph}>
-								Thank you for reaching out to Husky Carpentry Limited regarding{" "}
-								{subject} and our {selectedServices} services. We have received
-								your website inquiry on {formattedDate} and are eager to assist
-								you with your goals. At this moment there is no further action
-								is required from you.
+								Thank you for reaching out to Husky Carpentry Limited regarding,{" "}
+								&quot;{subject}&quot; and our {selectedServices} services. We
+								have received your website inquiry on {formattedDate} and are
+								eager to assist you with your goals. At this moment there is no
+								further action is required from you.
 							</Text>
 							<Text style={paragraph}>
 								Our team is currently reviewing the details you provided, and we
 								will get back to you as soon as possible with further
 								information and to discuss your requirements in more detail. We
-								will get in touch by calling you at {phoneNumber} or either
+								will get in touch by calling you at +44 {phoneNumber} or either
 								emailing you at {email}.
 							</Text>
 							<Text style={paragraph}>
@@ -79,10 +79,10 @@ export const CustomerEnquiryConfirmationEmail: React.FC<
 								</Link>
 							</Text>
 							<Text style={paragraph}>
-								Thank you once again for considering AWL Carpentry &
-								Developments Ltd for your kitchen design and installation needs.
-								We look forward to the opportunity to work with you and
-								transform your ideas to reality.
+								Thank you once again for considering Husky Carpentry Limited for
+								your {selectedServices} needs. We look forward to the
+								opportunity to work with you and transform your ideas to
+								reality.
 							</Text>
 							<Text style={paragraph}>Best regards,</Text>
 							<Text style={paragraph}>

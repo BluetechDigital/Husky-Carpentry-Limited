@@ -42,13 +42,13 @@ export const BusinessCustomerEnquiryConfirmationEmail: React.FC<
 			<Body style={main}>
 				<Container style={container}>
 					<EmailHeader
-						imagesDirUrl={`${imagesDirUrl}/Husky-Carpentry-Limited-Email-Header-1.png`}
+						imagesDirUrl={`${imagesDirUrl}/Husky-Carpentry-Limited-Email-Header-Business.png`}
 					/>
 					<Section style={content}>
 						<Text style={introParagraph}>Hello Team,</Text>
 						<Text style={paragraph}>
 							We&apos;ve just received a new inquiry through our website&apos;s
-							regarding {subject} and our general carpentry & developments
+							regarding, &quot;{subject}&quot; and our general carpentry
 							services. The customer as contacted us on {formattedDate} their
 							details are below.
 						</Text>
@@ -77,8 +77,8 @@ export const BusinessCustomerEnquiryConfirmationEmail: React.FC<
 						</Text>
 						<Text style={paragraph}>
 							Can we begin reviewing the details of {firstName}&apos;s inquiry
-							shortly and promptly follow up! We need to address his questions
-							and provide any additional information he may need. Thanks Team!
+							shortly and promptly follow up! If we require any additional
+							information can we get in contact with {firstName}. Thanks Team!
 						</Text>
 						<Text style={paragraph}>Best regards,</Text>
 						<Text style={paragraph}>

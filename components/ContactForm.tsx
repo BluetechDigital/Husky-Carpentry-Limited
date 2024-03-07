@@ -617,6 +617,13 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									initial={initial}
 									whileInView={fadeInUp}
 									viewport={{once: true}}
+									className={
+										formik?.touched?.firstName ||
+										formik?.touched?.lastName ||
+										formik?.touched?.email
+											? "block"
+											: "hidden"
+									}
 								>
 									<ReCAPTCHA
 										sitekey={`6LcxjJApAAAAALtBg2jNe6IyiAZTNnWnAVtmbBHS`}
