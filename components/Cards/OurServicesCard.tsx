@@ -57,7 +57,7 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 						</motion.div>
 					</motion.div>
 				</Link>
-				<div className="h-[185px] px-4 py-6">
+				<div className="h-[200px] px-4 py-6">
 					<motion.h3
 						initial={initial}
 						whileInView={fadeInUp}
