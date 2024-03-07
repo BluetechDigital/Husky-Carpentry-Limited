@@ -62,7 +62,7 @@ const OurProjectsCard: FC<IOurProjectsCard> = ({
 						</motion.div>
 					</motion.div>
 				</Link>
-				<div className="h-[185px] px-4 py-6 flex flex-col">
+				<div className="px-4 py-6 flex flex-col">
 					<span className="mb-2 text-darkGrey text-sm text-center lg:text-left">
 						{dateFormat(date, "dddd, mmmm d, yyyy")}
 					</span>
@@ -78,8 +78,8 @@ const OurProjectsCard: FC<IOurProjectsCard> = ({
 					</Link>
 					<Paragraph
 						content={
-							excerpt?.length > 175
-								? excerpt?.substring(0, 175) + "..."
+							excerpt?.length > 235
+								? excerpt?.substring(0, 235) + "..."
 								: excerpt
 						}
 						tailwindStyling="text-black text-base sm:text-tiny text-center lg:text-left"

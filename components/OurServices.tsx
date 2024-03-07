@@ -24,12 +24,8 @@ const OurServices: FC<IOurServices> = ({
 }) => {
 	return (
 		<>
-			<div
-				className={
-					styles.ourServices + " relative pt-12 sm:pt-16 py-4 px-4 bg-white"
-				}
-			>
-				<div className="container relative m-auto flex flex-col items-center gap-6">
+			<div className={styles.ourServices + " py-12 px-4 bg-white"}>
+				<div className="container m-auto flex flex-col items-center gap-6 lg:gap-16">
 					<motion.div
 						initial={initial}
 						variants={stagger}
@@ -60,7 +56,7 @@ const OurServices: FC<IOurServices> = ({
 							tailwindStyling="max-w-full lg:max-w-xl text-black text-base text-center lg:text-left"
 						/>
 					</motion.div>
-					<div className="w-full relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 py-6 px-0 sm:px-4 gap-6 items-start justify-center">
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-6 px-0 sm:px-4 lg:-m-4 gap-16 lg:gap-6">
 						{servicesGrid?.length > 0 ? (
 							servicesGrid?.map((item: any, keys: number) => (
 								<Fragment key={keys}>
