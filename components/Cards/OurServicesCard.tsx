@@ -68,8 +68,8 @@ const OurServicesCard: FC<IOurServicesCard> = ({
 					</motion.h3>
 					<Paragraph
 						content={
-							paragraph?.length > 175
-								? paragraph?.substring(0, 175) + "..."
+							paragraph?.length > 235
+								? paragraph?.substring(0, 235) + "..."
 								: paragraph
 						}
 						tailwindStyling="text-black text-base sm:text-tiny text-center"
