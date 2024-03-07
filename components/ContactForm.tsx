@@ -619,7 +619,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 									viewport={{once: true}}
 								>
 									<ReCAPTCHA
-										sitekey={`6LdhwIgpAAAAAOsHrSP7tTFEo0VbZetqF-mGwrr_`}
+										sitekey={`6LcxjJApAAAAALtBg2jNe6IyiAZTNnWnAVtmbBHS`}
 										onChange={handleReCaptchaChange}
 									/>
 								</motion.div>
