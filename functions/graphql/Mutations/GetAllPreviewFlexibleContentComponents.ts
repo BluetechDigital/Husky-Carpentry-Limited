@@ -24,6 +24,7 @@ export const getAllPreviewFlexibleContentComponents = async (
 										flexibleContent {
 											... on ${postTypeFlexibleContent}_Hero {
 												fieldGroupName
+												displaySection
 												heroSlider {
               										title
               										paragraph
@@ -52,6 +53,7 @@ export const getAllPreviewFlexibleContentComponents = async (
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												backgroundImage {
 													altText
 													sourceUrl
@@ -65,12 +67,14 @@ export const getAllPreviewFlexibleContentComponents = async (
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												displayParagraph
 											}
 											... on ${postTypeFlexibleContent}_TitleContentImage {
             									fieldGroupName
             									title
             									paragraph
+												displaySection
             									buttonLink {
             										url
             										title
@@ -93,6 +97,7 @@ export const getAllPreviewFlexibleContentComponents = async (
 												title
 												subtitle
 												paragraph
+												displaySection
 												imageGrid {
 													link {
 														url
@@ -114,6 +119,7 @@ export const getAllPreviewFlexibleContentComponents = async (
 												title
 												subtitle
 												paragraph
+												displaySection
 												servicesGrid {
 													card {
 														title
@@ -134,15 +140,58 @@ export const getAllPreviewFlexibleContentComponents = async (
 													}
 												}
 											}
+											... on ${postTypeFlexibleContent}_OurServicesGridTwo {
+            									fieldGroupName
+            									title
+												displaySection
+            									buttonLink {
+            										url
+            										title
+            										target
+            									}
+            									servicesGrid {
+            									  	card {
+            									  		title
+            									  		paragraph
+            									  		image {
+            									  			altText
+            									  			sourceUrl
+            									  			mediaDetails {
+            									  				height
+            									  				width
+            									  			}
+            									  		}
+													}
+            									}
+            								}
+											... on ${postTypeFlexibleContent}_SkillsExperiences {
+            									fieldGroupName
+            									title
+            									paragraph
+												displaySection
+												image {
+													altText
+													sourceUrl
+													mediaDetails {
+														height
+														width
+													}
+												}
+            									skillsExperiencesGrid {
+            										text
+            									}
+            								}
 											... on ${postTypeFlexibleContent}_OurLocation {
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 											}
 											... on ${postTypeFlexibleContent}_GettingStarted {
             									fieldGroupName
             									title
 												subtitle
+												displaySection
             									stepOne {
             										title
             										paragraph
@@ -185,11 +234,13 @@ export const getAllPreviewFlexibleContentComponents = async (
 												title
 												subtitle
 												paragraph
+												displaySection
 											}
 											... on ${postTypeFlexibleContent}_Gallery {
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												itemsDisplayedPerPage
 												gallery {
 													altText
@@ -200,32 +251,44 @@ export const getAllPreviewFlexibleContentComponents = async (
 													}
 												}
 											}
+											... on ${postTypeFlexibleContent}_GallerySlider {
+												fieldGroupName
+												displaySection
+												gallerySlider {
+              										title
+              										paragraph
+													buttonLink {
+                										url
+                										title
+                										target
+                									}
+              										backgroundImage {
+              											altText
+              											sourceUrl
+              											mediaDetails {
+              												height
+              												width
+              											}
+              										}
+													
+              									}
+											}
 											... on ${postTypeFlexibleContent}_TestimonialsSlider {
 												fieldGroupName
+												displaySection
 											}
 											... on ${postTypeFlexibleContent}_TestimonialsGrid {
 												fieldGroupName
 												title
 												subtitle
 												paragraph
+												displaySection
 											}
 											... on ${postTypeFlexibleContent}_Cta {
 												fieldGroupName
 												title
 												paragraph
-												buttonLink {
-													url
-													title
-													target
-												}
-												backgroundImage {
-													sourceUrl
-												}
-											}
-											... on ${postTypeFlexibleContent}_CtaTwo {
-												fieldGroupName
-												title
-												paragraph
+												displaySection
 												buttonLink {
 													url
 													title
@@ -239,11 +302,13 @@ export const getAllPreviewFlexibleContentComponents = async (
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 											}
 											... on ${postTypeFlexibleContent}_Maintenance {
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												backgroundImage {
 													altText
 													sourceUrl
@@ -257,6 +322,7 @@ export const getAllPreviewFlexibleContentComponents = async (
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												buttonLink {
 													url
 													title

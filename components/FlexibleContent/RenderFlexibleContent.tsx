@@ -34,95 +34,91 @@ const RenderFlexibleContent: FC = () => {
 			{content?.content?.length > 0 ? (
 				content?.content?.map((item: any, keys: number) => (
 					<section key={keys}>
-						{item?.fieldGroupName === `${FlexibleContent}_Hero` ? (
+						{item?.fieldGroupName === `${FlexibleContent}_Hero` &&
+						item?.displaySection ? (
 							<>
-								<Hero
-									heroSlider={item?.heroSlider}
-									displaySection={item?.displaySection}
-								/>
+								<Hero heroSlider={item?.heroSlider} />
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_HeroTwo` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_HeroTwo` &&
+						  item?.displaySection ? (
 							<>
 								<HeroTwo
 									title={item?.title}
 									paragraph={item?.paragraph}
-									displaySection={item?.displaySection}
 									backgroundImage={item?.backgroundImage}
 								/>
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_TitleParagraph` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_TitleParagraph` &&
+						  item?.displaySection ? (
 							<>
 								<TitleParagraph
 									title={item?.title}
 									paragraph={item?.paragraph}
-									displaySection={item?.displaySection}
 									displayParagraph={item?.displayParagraph}
 								/>
 							</>
 						) : item?.fieldGroupName ===
-						  `${FlexibleContent}_TitleContentImage` ? (
+								`${FlexibleContent}_TitleContentImage` &&
+						  item?.displaySection ? (
 							<>
 								<TitleContentImage
 									title={item?.title}
 									image={item?.image}
 									paragraph={item?.paragraph}
 									buttonLink={item?.buttonLink}
-									displaySection={item?.displaySection}
 									displayContentOption={item?.displayContentOption}
 									displayBackgroundIcon={item?.displayBackgroundIcon}
 									displayBackgroundColor={item?.displayBackgroundColor}
 								/>
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_OurClients` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_OurClients` &&
+						  item?.displaySection ? (
 							<>
 								<OurClients
 									title={item?.title}
 									subtitle={item?.subtitle}
 									paragraph={item?.paragraph}
 									imageGrid={item?.imageGrid}
-									displaySection={item?.displaySection}
 								/>
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_OurServices` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_OurServices` &&
+						  item?.displaySection ? (
 							<>
 								<OurServices
 									title={item?.title}
 									subtitle={item?.subtitle}
 									paragraph={item?.paragraph}
 									servicesGrid={item?.servicesGrid}
-									displaySection={item?.displaySection}
 								/>
 							</>
 						) : item?.fieldGroupName ===
-						  `${FlexibleContent}_OurServicesGridTwo` ? (
+								`${FlexibleContent}_OurServicesGridTwo` &&
+						  item?.displaySection ? (
 							<>
 								<OurServicesGridTwo
 									title={item?.title}
 									buttonLink={item?.buttonLink}
 									servicesGrid={item?.servicesGrid}
-									displaySection={item?.displaySection}
 								/>
 							</>
 						) : item?.fieldGroupName ===
-						  `${FlexibleContent}_SkillsExperiences` ? (
+								`${FlexibleContent}_SkillsExperiences` &&
+						  item?.displaySection ? (
 							<>
 								<SkillsExperiences
 									title={item?.title}
 									image={item?.image}
 									paragraph={item?.paragraph}
-									displaySection={item?.displaySection}
 									skillsExperiencesGrid={item?.skillsExperiencesGrid}
 								/>
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_OurLocation` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_OurLocation` &&
+						  item?.displaySection ? (
 							<>
-								<OurLocation
-									title={item?.title}
-									paragraph={item?.paragraph}
-									displaySection={item?.displaySection}
-								/>
+								<OurLocation title={item?.title} paragraph={item?.paragraph} />
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_GettingStarted` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_GettingStarted` &&
+						  item?.displaySection ? (
 							<>
 								<GettingStarted
 									title={item?.title}
@@ -130,86 +126,80 @@ const RenderFlexibleContent: FC = () => {
 									stepOne={item?.stepOne}
 									stepTwo={item?.stepTwo}
 									stepThree={item?.stepThree}
-									displaySection={item?.displaySection}
 								/>
 							</>
-						) : item?.fieldGroupName ===
-						  `${FlexibleContent}_OurProjectsGrid` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_OurProjectsGrid` &&
+						  item?.displaySection ? (
 							<>
 								<OurProjectsGrid
 									title={item?.title}
 									subtitle={item?.subtitle}
 									paragraph={item?.paragraph}
-									displaySection={item?.displaySection}
 								/>
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_Gallery` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_Gallery` &&
+						  item?.displaySection ? (
 							<>
 								<Gallery
 									title={item?.title}
 									gallery={item?.gallery}
 									paragraph={item?.paragraph}
-									displaySection={item?.displaySection}
 									itemsDisplayedPerPage={item?.itemsDisplayedPerPage}
 								/>
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_GallerySlider` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_GallerySlider` &&
+						  item?.displaySection ? (
 							<>
-								<GallerySlider
-									gallerySlider={item?.gallerySlider}
-									displaySection={item?.displaySection}
-								/>
+								<GallerySlider gallerySlider={item?.gallerySlider} />
 							</>
 						) : item?.fieldGroupName ===
-						  `${FlexibleContent}_TestimonialsSlider` ? (
+								`${FlexibleContent}_TestimonialsSlider` &&
+						  item?.displaySection ? (
 							<>
 								<TestimonialsSlider />
 							</>
 						) : item?.fieldGroupName ===
-						  `${FlexibleContent}_TestimonialsGrid` ? (
+								`${FlexibleContent}_TestimonialsGrid` &&
+						  item?.displaySection ? (
 							<>
 								<TestimonialsGrid
 									title={item?.title}
 									subtitle={item?.subtitle}
 									paragraph={item?.paragraph}
-									displaySection={item?.displaySection}
 								/>
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_Cta` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_Cta` &&
+						  item?.displaySection ? (
 							<>
 								<CTA
 									title={item?.title}
 									paragraph={item?.paragraph}
 									buttonLink={item?.buttonLink}
-									displaySection={item?.displaySection}
 									backgroundImage={item?.backgroundImage?.sourceUrl}
 								/>
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_ContactForm` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_ContactForm` &&
+						  item?.displaySection ? (
 							<>
-								<ContactForm
-									title={item?.title}
-									paragraph={item?.paragraph}
-									displaySection={item?.displaySection}
-								/>
+								<ContactForm title={item?.title} paragraph={item?.paragraph} />
 							</>
-						) : item?.fieldGroupName === `${FlexibleContent}_Maintenance` ? (
+						) : item?.fieldGroupName === `${FlexibleContent}_Maintenance` &&
+						  item?.displaySection ? (
 							<>
 								<Maintenance
 									title={item?.title}
 									paragraph={item?.paragraph}
-									displaySection={item?.displaySection}
 									backgroundImage={item?.backgroundImage}
 								/>
 							</>
 						) : item?.fieldGroupName ===
-						  `${FlexibleContent}_ErrorPageContent` ? (
+								`${FlexibleContent}_ErrorPageContent` &&
+						  item?.displaySection ? (
 							<>
 								<ErrorPage
 									title={item?.title}
 									paragraph={item?.paragraph}
 									buttonLink={item?.buttonLink}
-									displaySection={item?.displaySection}
 									backgroundImage={item?.backgroundImage?.sourceUrl}
 								/>
 							</>

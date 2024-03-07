@@ -18,7 +18,7 @@ import styles from "../styles/components/GallerySlider.module.scss";
 // Components
 import Paragraph from "./Elements/Paragraph";
 
-const GallerySlider: FC<IGallerySlider> = ({gallerySlider, displaySection}) => {
+const GallerySlider: FC<IGallerySlider> = ({gallerySlider}) => {
 	return (
 		<>
 			<div

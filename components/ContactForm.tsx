@@ -24,7 +24,7 @@ import styles from "@/styles/components/ContactForm.module.scss";
 // Components
 import Paragraph from "./Elements/Paragraph";
 
-const ContactForm: FC<IContactForm> = ({title, paragraph, displaySection}) => {
+const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 	const router = useRouter();
 	const globalContext = useGlobalContext();
 

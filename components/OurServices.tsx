@@ -21,7 +21,6 @@ const OurServices: FC<IOurServices> = ({
 	subtitle,
 	paragraph,
 	servicesGrid,
-	displaySection,
 }) => {
 	return (
 		<>

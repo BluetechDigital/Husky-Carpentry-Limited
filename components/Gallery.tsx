@@ -15,7 +15,6 @@ const Gallery: FC<IGallery> = ({
 	title,
 	gallery,
 	paragraph,
-	displaySection,
 	itemsDisplayedPerPage,
 }) => {
 	return (

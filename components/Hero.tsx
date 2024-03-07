@@ -18,7 +18,7 @@ import styles from "../styles/components/Hero.module.scss";
 // Components
 import Paragraph from "./Elements/Paragraph";
 
-const Hero: FC<IHero> = ({heroSlider, displaySection}) => {
+const Hero: FC<IHero> = ({heroSlider}) => {
 	return (
 		<>
 			<div className={styles.hero + " relative z-50 flex flex-col h-fit"}>

@@ -25,7 +25,6 @@ const TitleContentImage: FC<ITitleContentImage> = ({
 	image,
 	paragraph,
 	buttonLink,
-	displaySection,
 	displayContentOption,
 	displayBackgroundIcon,
 	displayBackgroundColor,

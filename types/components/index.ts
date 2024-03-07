@@ -2,7 +2,6 @@
 export type ICTA = {
 	title: string;
 	paragraph: string;
-	displaySection: boolean;
 	backgroundImage: string;
 	buttonLink: {
 		url: string;
@@ -11,7 +10,6 @@ export type ICTA = {
 	};
 };
 export type IHero = {
-	displaySection: boolean;
 	heroSlider: [
 		{
 			title: string;
@@ -40,7 +38,6 @@ export type IHero = {
 export type IHeroTwo = {
 	title: string;
 	paragraph: string;
-	displaySection: boolean;
 	backgroundImage: {
 		altText: string;
 		sourceUrl: string;
@@ -53,7 +50,6 @@ export type IHeroTwo = {
 export type IGallery = {
 	title: string;
 	paragraph: string;
-	displaySection: boolean;
 	itemsDisplayedPerPage: string;
 	gallery: [
 		{
@@ -70,7 +66,6 @@ export type IOurClients = {
 	title: string;
 	subtitle: string;
 	paragraph: string;
-	displaySection: boolean;
 	imageGrid: [
 		{
 			link: {
@@ -93,7 +88,6 @@ export type IOurServices = {
 	title: string;
 	subtitle: string;
 	paragraph: string;
-	displaySection: boolean;
 	servicesGrid: [
 		{
 			card: {
@@ -119,17 +113,14 @@ export type IOurServices = {
 export type IOurLocation = {
 	title: string;
 	paragraph: string;
-	displaySection: boolean;
 };
 export type IContactForm = {
 	title: string;
 	paragraph: string;
-	displaySection: boolean;
 };
 export type IMaintenance = {
 	title: string;
 	paragraph: string;
-	displaySection: boolean;
 	backgroundImage: {
 		altText: string;
 		sourceUrl: string;
@@ -140,7 +131,6 @@ export type IMaintenance = {
 	};
 };
 export type IGallerySlider = {
-	displaySection: boolean;
 	gallerySlider: [
 		{
 			title: string;
@@ -164,13 +154,11 @@ export type IGallerySlider = {
 export type ITitleParagraph = {
 	title: string;
 	paragraph: string;
-	displaySection: boolean;
 	displayParagraph: boolean;
 };
 export type IGettingStarted = {
 	title: string;
 	subtitle: string;
-	displaySection: boolean;
 	stepOne: {
 		title: string;
 		paragraph: string;
@@ -212,18 +200,15 @@ export type IOurProjectsGrid = {
 	title: string;
 	subtitle: string;
 	paragraph: string;
-	displaySection: boolean;
 };
 export type ITestimonialsGrid = {
 	title: string;
 	subtitle: string;
 	paragraph: string;
-	displaySection: boolean;
 };
 export type ITitleContentImage = {
 	title: string;
 	paragraph: string;
-	displaySection: boolean;
 	displayContentOption: string;
 	displayBackgroundColor: string;
 	displayBackgroundIcon: boolean;
@@ -244,7 +229,6 @@ export type ITitleContentImage = {
 export type ISkillsExperiences = {
 	title: string;
 	paragraph: string;
-	displaySection: boolean;
 	image: {
 		altText: string;
 		sourceUrl: string;
@@ -261,7 +245,6 @@ export type ISkillsExperiences = {
 };
 export type IOurServicesGridTwo = {
 	title: string;
-	displaySection: boolean;
 	buttonLink: {
 		url: string;
 		title: string;
@@ -294,7 +277,6 @@ export type IErrorPage = {
 	title: string;
 	paragraph: string;
 	backgroundImage: string;
-	displaySection: boolean;
 	buttonLink: {
 		url: string;
 		title: string;

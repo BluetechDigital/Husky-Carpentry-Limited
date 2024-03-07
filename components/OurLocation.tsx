@@ -7,7 +7,7 @@ import {fadeInUp, initial, stagger} from "../animations/animations";
 // Components
 import Paragraph from "./Elements/Paragraph";
 
-const OurLocation: FC<IOurLocation> = ({title, paragraph, displaySection}) => {
+const OurLocation: FC<IOurLocation> = ({title, paragraph}) => {
 	return (
 		<>
 			<div className="bg-white">

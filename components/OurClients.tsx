@@ -16,7 +16,6 @@ const OurClients: FC<IOurClients> = ({
 	subtitle,
 	paragraph,
 	imageGrid,
-	displaySection,
 }) => {
 	return (
 		<>

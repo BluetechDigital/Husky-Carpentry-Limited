@@ -10,12 +10,7 @@ import styles from "../styles/components/Hero.module.scss";
 // Components
 import Paragraph from "./Elements/Paragraph";
 
-const HeroTwo: FC<IHeroTwo> = ({
-	title,
-	paragraph,
-	displaySection,
-	backgroundImage,
-}) => {
+const HeroTwo: FC<IHeroTwo> = ({title, paragraph, backgroundImage}) => {
 	return (
 		<>
 			<div className={styles.heroTwo + ` relative z-50 w-full p-4 pt-[90px]`}>
