@@ -39,14 +39,14 @@
 			}
 
 			a {
-				@apply font-semibold underline text-blue-default hover:text-blue-two transition-all ease-in-out duration-500;
+				@apply font-semibold underline text-blue-default hover:text-blue-dark transition-all ease-in-out duration-500;
 			}
 		}
 	}
 
 	p {
 		a {
-			@apply font-semibold underline text-blue-default hover:text-blue-two transition-all ease-in-out duration-500;
+			@apply font-semibold underline text-blue-default hover:text-blue-dark transition-all ease-in-out duration-500;
 		}
 
 		img {
