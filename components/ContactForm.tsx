@@ -639,7 +639,7 @@ const ContactForm: FC<IContactForm> = ({title, paragraph}) => {
 										reCaptchaResult === null ||
 										reCaptchaResult === undefined
 									}
-									className="w-full text-white disabled:bg-opacity-20 disabled:cursor-not-allowed"
+									className="w-full text-white font-semibold tracking-wide disabled:bg-opacity-20 disabled:cursor-not-allowed"
 									type="submit"
 								>
 									<span

@@ -28,6 +28,7 @@ const RenderFlexibleContent: FC = () => {
 	const content = usePageContext();
 	const FlexibleContent: IPostTypeFlexibleContent =
 		content?.postTypeFlexibleContent;
+
 	return (
 		<>
 			{content?.content?.length > 0 ? (

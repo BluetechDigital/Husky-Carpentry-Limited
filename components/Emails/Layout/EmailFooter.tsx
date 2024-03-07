@@ -9,16 +9,16 @@ const EmailFooter: React.FC<IEmailFooter.IEmailFooter> = ({
 }) => {
 	return (
 		<>
-			<Section style={{border: "5px solid", borderColor: "#116dff"}}></Section>
+			<Section style={{border: "5px solid", borderColor: "#11acff"}}></Section>
 			<Section style={footer}>
 				<Section style={footerLogoSection}>
-					<Link href={`https://awlcarpentrydevelopments.co.uk`}>
+					<Link href={`https://huskycarpentry.co.uk`}>
 						<Img
 							width="105px"
 							height="105px"
 							style={footerLogo}
 							alt="Husky Carpentry Limited Ltd Logo White"
-							src={`${imagesDirUrl}/awl-carpentry-developments-logo-white.png`}
+							src={`${imagesDirUrl}/husky-carpentry-logo-white.png`}
 						/>
 					</Link>
 				</Section>
@@ -83,18 +83,18 @@ const footer: IEmailFooter.IFooter = {
 	maxWidth: "580px",
 	margin: "0 auto",
 	marginBottom: "30px",
-	backgroundColor: "#001640",
+	backgroundColor: "#027bbd",
 };
 
 const footerLogoSection: IEmailFooter.IFooterLogoSection = {
 	width: "100%",
 	padding: "0px",
-	backgroundColor: "#001640",
+	backgroundColor: "#027bbd",
 };
 
 const footerLogo: IEmailFooter.IFooterLogo = {
-	width: "100%",
+	width: "85px",
 	height: "85px",
-	margin: "0 auto",
+	margin: "0 auto 25px auto",
 	maxWidth: "125px",
 };

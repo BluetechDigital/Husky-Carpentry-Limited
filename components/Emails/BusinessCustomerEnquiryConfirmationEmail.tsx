@@ -42,7 +42,7 @@ export const BusinessCustomerEnquiryConfirmationEmail: React.FC<
 			<Body style={main}>
 				<Container style={container}>
 					<EmailHeader
-						imagesDirUrl={`${imagesDirUrl}/AWL-Carpentry-Developments-Ltd-Email-Header-1.png`}
+						imagesDirUrl={`${imagesDirUrl}/Husky-Carpentry-Limited-Email-Header-1.png`}
 					/>
 					<Section style={content}>
 						<Text style={introParagraph}>Hello Team,</Text>
@@ -82,11 +82,11 @@ export const BusinessCustomerEnquiryConfirmationEmail: React.FC<
 						</Text>
 						<Text style={paragraph}>Best regards,</Text>
 						<Text style={paragraph}>
-							Adam Long,
+							Jamie Byrne,
 							<br />
 							Director,
 							<br />
-							AWL Carpentry & Developments Ltd
+							Husky Carpentry Limited
 						</Text>
 					</Section>
 					<EmailFooter

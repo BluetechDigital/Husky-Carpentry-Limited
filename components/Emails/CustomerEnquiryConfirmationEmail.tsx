@@ -38,22 +38,20 @@ export const CustomerEnquiryConfirmationEmail: React.FC<
 		<>
 			<Html>
 				<Head />
-				<Preview>
-					Thank You for Contacting AWL Carpentry & Developments Ltd
-				</Preview>
+				<Preview>Thank You for Contacting Husky Carpentry Limited</Preview>
 				<Body style={main}>
 					<Container style={container}>
 						<EmailHeader
-							imagesDirUrl={`${imagesDirUrl}/AWL-Carpentry-Developments-Ltd-Email-Header.png`}
+							imagesDirUrl={`${imagesDirUrl}/Husky-Carpentry-Limited-Email-Header.png`}
 						/>
 						<Section style={content}>
 							<Text style={introParagraph}>Hi {firstName},</Text>
 							<Text style={paragraph}>
-								Thank you for reaching out to AWL Carpentry & Developments Ltd
-								regarding {subject} and our {selectedServices} services. We have
-								received your website inquiry on {formattedDate} and are eager
-								to assist you with your goals. At this moment there is no
-								further action is required from you.
+								Thank you for reaching out to Husky Carpentry Limited regarding{" "}
+								{subject} and our {selectedServices} services. We have received
+								your website inquiry on {formattedDate} and are eager to assist
+								you with your goals. At this moment there is no further action
+								is required from you.
 							</Text>
 							<Text style={paragraph}>
 								Our team is currently reviewing the details you provided, and we
@@ -88,11 +86,11 @@ export const CustomerEnquiryConfirmationEmail: React.FC<
 							</Text>
 							<Text style={paragraph}>Best regards,</Text>
 							<Text style={paragraph}>
-								Adam Long,
+								Jamie Byrne,
 								<br />
 								Director,
 								<br />
-								AWL Carpentry & Developments Ltd
+								Husky Carpentry Limited
 							</Text>
 							<Text style={paragraph}>
 								Tel:{" "}
@@ -126,11 +124,8 @@ export const CustomerEnquiryConfirmationEmail: React.FC<
 								</Link>
 								<br />
 								Website:{" "}
-								<Link
-									style={link}
-									href={`https://awlcarpentrydevelopments.co.uk`}
-								>
-									awlcarpentrydevelopments.co.uk
+								<Link style={link} href={`https://huskycarpentry.co.uk`}>
+									huskycarpentry.co.uk
 								</Link>
 							</Text>
 						</Section>

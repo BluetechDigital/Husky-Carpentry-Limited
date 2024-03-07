@@ -12,10 +12,10 @@ const EmailHeader: React.FC<IEmailHeader.IEmailHeader> = ({imagesDirUrl}) => {
 					height="105"
 					style={logo}
 					src={imagesDirUrl}
-					alt="Husky Carpentry Limited Ltd Logo"
+					alt="Husky Carpentry Limited Logo"
 				/>
 			</Section>
-			<Section style={{border: "5px solid", borderColor: "#116dff"}}></Section>
+			<Section style={{border: "5px solid", borderColor: "#11acff"}}></Section>
 		</>
 	);
 };
@@ -28,7 +28,7 @@ const imageSection: IEmailHeader.IImageSection = {
 	display: "flex",
 	alignItems: "center",
 	justifyContent: "center",
-	backgroundColor: "#001640",
+	backgroundColor: "#027bbd",
 };
 
 const logo: IEmailHeader.ILogo = {
