@@ -27,7 +27,7 @@ export default async (req: any, res: any) => {
 		pagesLinks.push(object);
 	});
 
-	// Featured Projects Dynamic Links
+	// Our Projects Dynamic Links
 	ourProjectsSlugs?.map((keys: any) => {
 		const object = {
 			url: `/projects/${keys?.slug}`,
