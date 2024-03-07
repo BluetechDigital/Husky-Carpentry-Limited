@@ -3,16 +3,22 @@
 @import "../../base/colors";
 
 .paragraph {
-	h2,
-	h4,
 	h5 {
 		font-family: $body;
 		@apply text-lg font-semibold py-4;
 	}
 
-	h3 {
+	h1,
+	h2,
+	h3,
+	h4 {
 		font-family: $main;
 		@apply text-lg font-semibold py-4 uppercase;
+	}
+
+	h3,
+	h4 {
+		@apply text-medium;
 	}
 
 	h2 {
