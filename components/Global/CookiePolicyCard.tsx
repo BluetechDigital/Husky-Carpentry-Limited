@@ -25,7 +25,7 @@ const CookiePolicyCard: FC = () => {
 			<div
 				className={
 					showCookiePolicyCard
-						? `fixed bottom-0 right-0 max-w-6xl px-0 md:max-w-xl z-[999]`
+						? `fixed bottom-0 right-0 mx-4 max-w-6xl px-0 md:max-w-xl z-[999]`
 						: `hidden`
 				}
 			>
@@ -43,7 +43,7 @@ const CookiePolicyCard: FC = () => {
 						initial={initial}
 						whileInView={fadeInUp}
 						viewport={{once: true}}
-						className="font-bold text-base tracking-wide text-pureBlack"
+						className="font-bold text-base tracking-wide text-pureBlack uppercase"
 					>
 						Cookie Policy
 					</motion.h3>
