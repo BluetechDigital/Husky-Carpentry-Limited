@@ -44,7 +44,7 @@ const TestimonialsSlider: FC = () => {
 										<SwiperSlide>
 											<div className="max-w-4xl mx-auto pb-28 lg:pb-0">
 												<div className="lg:flex items-center justify-center">
-													<div className="mb-8 lg:mb-0 lg:mr-12 lg:mr-24">
+													<div className="mb-8 lg:mb-0 lg:mr-24">
 														<Image
 															className={
 																item?.node?.testimonialReview?.image?.sourceUrl

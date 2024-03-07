@@ -13,6 +13,7 @@ const OurProjectsGrid: FC<IOurProjectsGrid> = ({
 	title,
 	subtitle,
 	paragraph,
+	displaySection,
 }) => {
 	const globalContext = useGlobalContext();
 

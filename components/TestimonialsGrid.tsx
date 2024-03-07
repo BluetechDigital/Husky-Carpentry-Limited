@@ -16,6 +16,7 @@ const TestimonialsGrid: FC<ITestimonialsGrid> = ({
 	title,
 	subtitle,
 	paragraph,
+	displaySection,
 }) => {
 	const globalContext = useGlobalContext();
 

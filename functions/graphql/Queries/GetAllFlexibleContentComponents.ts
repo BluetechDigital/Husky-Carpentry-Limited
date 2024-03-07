@@ -22,6 +22,7 @@ export const getAllFlexibleContentComponents = async (
 										flexibleContent {
 											... on ${postTypeFlexibleContent}_Hero {
 												fieldGroupName
+												displaySection
 												heroSlider {
               										title
               										paragraph
@@ -50,6 +51,7 @@ export const getAllFlexibleContentComponents = async (
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												backgroundImage {
 													altText
 													sourceUrl
@@ -63,12 +65,14 @@ export const getAllFlexibleContentComponents = async (
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												displayParagraph
 											}
 											... on ${postTypeFlexibleContent}_TitleContentImage {
             									fieldGroupName
             									title
             									paragraph
+												displaySection
             									buttonLink {
             										url
             										title
@@ -91,6 +95,7 @@ export const getAllFlexibleContentComponents = async (
 												title
 												subtitle
 												paragraph
+												displaySection
 												imageGrid {
 													link {
 														url
@@ -112,6 +117,7 @@ export const getAllFlexibleContentComponents = async (
 												title
 												subtitle
 												paragraph
+												displaySection
 												servicesGrid {
 													card {
 														title
@@ -135,6 +141,7 @@ export const getAllFlexibleContentComponents = async (
 											... on ${postTypeFlexibleContent}_OurServicesGridTwo {
             									fieldGroupName
             									title
+												displaySection
             									buttonLink {
             										url
             										title
@@ -159,6 +166,7 @@ export const getAllFlexibleContentComponents = async (
             									fieldGroupName
             									title
             									paragraph
+												displaySection
 												image {
 													altText
 													sourceUrl
@@ -175,11 +183,13 @@ export const getAllFlexibleContentComponents = async (
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 											}
 											... on ${postTypeFlexibleContent}_GettingStarted {
             									fieldGroupName
             									title
 												subtitle
+												displaySection
             									stepOne {
             										title
             										paragraph
@@ -222,11 +232,13 @@ export const getAllFlexibleContentComponents = async (
 												title
 												subtitle
 												paragraph
+												displaySection
 											}
 											... on ${postTypeFlexibleContent}_Gallery {
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												itemsDisplayedPerPage
 												gallery {
 													altText
@@ -239,6 +251,7 @@ export const getAllFlexibleContentComponents = async (
 											}
 											... on ${postTypeFlexibleContent}_GallerySlider {
 												fieldGroupName
+												displaySection
 												gallerySlider {
               										title
               										paragraph
@@ -260,17 +273,20 @@ export const getAllFlexibleContentComponents = async (
 											}
 											... on ${postTypeFlexibleContent}_TestimonialsSlider {
 												fieldGroupName
+												displaySection
 											}
 											... on ${postTypeFlexibleContent}_TestimonialsGrid {
 												fieldGroupName
 												title
 												subtitle
 												paragraph
+												displaySection
 											}
 											... on ${postTypeFlexibleContent}_Cta {
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												buttonLink {
 													url
 													title
@@ -284,11 +300,13 @@ export const getAllFlexibleContentComponents = async (
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 											}
 											... on ${postTypeFlexibleContent}_Maintenance {
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												backgroundImage {
 													altText
 													sourceUrl
@@ -302,6 +320,7 @@ export const getAllFlexibleContentComponents = async (
 												fieldGroupName
 												title
 												paragraph
+												displaySection
 												buttonLink {
 													url
 													title

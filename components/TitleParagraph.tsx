@@ -10,6 +10,7 @@ import Paragraph from "./Elements/Paragraph";
 const TitleParagraph: FC<ITitleParagraph> = ({
 	title,
 	paragraph,
+	displaySection,
 	displayParagraph,
 }) => {
 	return (

@@ -10,7 +10,13 @@ import {fadeIn, initialTwo} from "@/animations/animations";
 // Components
 import Paragraph from "./Elements/Paragraph";
 
-const CTA: FC<ICTA> = ({title, paragraph, buttonLink, backgroundImage}) => {
+const CTA: FC<ICTA> = ({
+	title,
+	paragraph,
+	buttonLink,
+	backgroundImage,
+	displaySection,
+}) => {
 	const globalContext = useGlobalContext();
 	return (
 		<>

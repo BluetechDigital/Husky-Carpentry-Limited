@@ -21,6 +21,7 @@ const OurServicesGridTwo: FC<IOurServicesGridTwo> = ({
 	title,
 	buttonLink,
 	servicesGrid,
+	displaySection,
 }) => {
 	return (
 		<>

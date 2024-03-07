@@ -18,6 +18,7 @@ const SkillsExperiences: FC<ISkillsExperiences> = ({
 	title,
 	image,
 	paragraph,
+	displaySection,
 	skillsExperiencesGrid,
 }) => {
 	return (

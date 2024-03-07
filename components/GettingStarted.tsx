@@ -17,6 +17,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 	stepOne,
 	stepTwo,
 	stepThree,
+	displaySection,
 }) => {
 	return (
 		<>

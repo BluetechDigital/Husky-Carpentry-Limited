@@ -36,13 +36,17 @@ const RenderFlexibleContent: FC = () => {
 					<section key={keys}>
 						{item?.fieldGroupName === `${FlexibleContent}_Hero` ? (
 							<>
-								<Hero heroSlider={item?.heroSlider} />
+								<Hero
+									heroSlider={item?.heroSlider}
+									displaySection={item?.displaySection}
+								/>
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_HeroTwo` ? (
 							<>
 								<HeroTwo
 									title={item?.title}
 									paragraph={item?.paragraph}
+									displaySection={item?.displaySection}
 									backgroundImage={item?.backgroundImage}
 								/>
 							</>
@@ -51,6 +55,7 @@ const RenderFlexibleContent: FC = () => {
 								<TitleParagraph
 									title={item?.title}
 									paragraph={item?.paragraph}
+									displaySection={item?.displaySection}
 									displayParagraph={item?.displayParagraph}
 								/>
 							</>
@@ -62,6 +67,7 @@ const RenderFlexibleContent: FC = () => {
 									image={item?.image}
 									paragraph={item?.paragraph}
 									buttonLink={item?.buttonLink}
+									displaySection={item?.displaySection}
 									displayContentOption={item?.displayContentOption}
 									displayBackgroundIcon={item?.displayBackgroundIcon}
 									displayBackgroundColor={item?.displayBackgroundColor}
@@ -74,6 +80,7 @@ const RenderFlexibleContent: FC = () => {
 									subtitle={item?.subtitle}
 									paragraph={item?.paragraph}
 									imageGrid={item?.imageGrid}
+									displaySection={item?.displaySection}
 								/>
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_OurServices` ? (
@@ -83,6 +90,7 @@ const RenderFlexibleContent: FC = () => {
 									subtitle={item?.subtitle}
 									paragraph={item?.paragraph}
 									servicesGrid={item?.servicesGrid}
+									displaySection={item?.displaySection}
 								/>
 							</>
 						) : item?.fieldGroupName ===
@@ -92,6 +100,7 @@ const RenderFlexibleContent: FC = () => {
 									title={item?.title}
 									buttonLink={item?.buttonLink}
 									servicesGrid={item?.servicesGrid}
+									displaySection={item?.displaySection}
 								/>
 							</>
 						) : item?.fieldGroupName ===
@@ -101,12 +110,17 @@ const RenderFlexibleContent: FC = () => {
 									title={item?.title}
 									image={item?.image}
 									paragraph={item?.paragraph}
+									displaySection={item?.displaySection}
 									skillsExperiencesGrid={item?.skillsExperiencesGrid}
 								/>
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_OurLocation` ? (
 							<>
-								<OurLocation title={item?.title} paragraph={item?.paragraph} />
+								<OurLocation
+									title={item?.title}
+									paragraph={item?.paragraph}
+									displaySection={item?.displaySection}
+								/>
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_GettingStarted` ? (
 							<>
@@ -116,6 +130,7 @@ const RenderFlexibleContent: FC = () => {
 									stepOne={item?.stepOne}
 									stepTwo={item?.stepTwo}
 									stepThree={item?.stepThree}
+									displaySection={item?.displaySection}
 								/>
 							</>
 						) : item?.fieldGroupName ===
@@ -125,6 +140,7 @@ const RenderFlexibleContent: FC = () => {
 									title={item?.title}
 									subtitle={item?.subtitle}
 									paragraph={item?.paragraph}
+									displaySection={item?.displaySection}
 								/>
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_Gallery` ? (
@@ -133,12 +149,16 @@ const RenderFlexibleContent: FC = () => {
 									title={item?.title}
 									gallery={item?.gallery}
 									paragraph={item?.paragraph}
+									displaySection={item?.displaySection}
 									itemsDisplayedPerPage={item?.itemsDisplayedPerPage}
 								/>
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_GallerySlider` ? (
 							<>
-								<GallerySlider gallerySlider={item?.gallerySlider} />
+								<GallerySlider
+									gallerySlider={item?.gallerySlider}
+									displaySection={item?.displaySection}
+								/>
 							</>
 						) : item?.fieldGroupName ===
 						  `${FlexibleContent}_TestimonialsSlider` ? (
@@ -152,6 +172,7 @@ const RenderFlexibleContent: FC = () => {
 									title={item?.title}
 									subtitle={item?.subtitle}
 									paragraph={item?.paragraph}
+									displaySection={item?.displaySection}
 								/>
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_Cta` ? (
@@ -160,18 +181,24 @@ const RenderFlexibleContent: FC = () => {
 									title={item?.title}
 									paragraph={item?.paragraph}
 									buttonLink={item?.buttonLink}
+									displaySection={item?.displaySection}
 									backgroundImage={item?.backgroundImage?.sourceUrl}
 								/>
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_ContactForm` ? (
 							<>
-								<ContactForm title={item?.title} paragraph={item?.paragraph} />
+								<ContactForm
+									title={item?.title}
+									paragraph={item?.paragraph}
+									displaySection={item?.displaySection}
+								/>
 							</>
 						) : item?.fieldGroupName === `${FlexibleContent}_Maintenance` ? (
 							<>
 								<Maintenance
 									title={item?.title}
 									paragraph={item?.paragraph}
+									displaySection={item?.displaySection}
 									backgroundImage={item?.backgroundImage}
 								/>
 							</>
@@ -182,6 +209,7 @@ const RenderFlexibleContent: FC = () => {
 									title={item?.title}
 									paragraph={item?.paragraph}
 									buttonLink={item?.buttonLink}
+									displaySection={item?.displaySection}
 									backgroundImage={item?.backgroundImage?.sourceUrl}
 								/>
 							</>
