@@ -130,12 +130,13 @@
 		cursor: pointer;
 		position: fixed;
 		z-index: 999;
-		right: 25px;
-		top: 13px;
+		right: 0px;
+		top: 18px;
 		padding: 0;
 		width: 50px;
 		height: 45px;
 		border: none;
+		margin-right: 1rem;
 		line-height: 0.6;
 		text-align: center;
 		background: $blue;
