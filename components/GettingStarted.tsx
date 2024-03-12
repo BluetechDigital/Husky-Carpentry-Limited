@@ -183,8 +183,8 @@ const GettingStarted: FC<IGettingStarted> = ({
 								</motion.h3>
 								<Paragraph
 									content={
-										stepOne?.paragraph?.length > 235
-											? stepOne?.paragraph?.substring(0, 235) + "..."
+										stepOne?.paragraph?.length > 350
+											? stepOne?.paragraph?.substring(0, 350) + "..."
 											: stepOne?.paragraph
 									}
 									tailwindStyling="text-black text-tiny sm:text-base text-center"
@@ -218,8 +218,8 @@ const GettingStarted: FC<IGettingStarted> = ({
 								</motion.h3>
 								<Paragraph
 									content={
-										stepTwo?.paragraph?.length > 235
-											? stepTwo?.paragraph?.substring(0, 235) + "..."
+										stepTwo?.paragraph?.length > 350
+											? stepTwo?.paragraph?.substring(0, 350) + "..."
 											: stepTwo?.paragraph
 									}
 									tailwindStyling="text-black text-tiny sm:text-base text-center"
@@ -253,8 +253,8 @@ const GettingStarted: FC<IGettingStarted> = ({
 								</motion.h3>
 								<Paragraph
 									content={
-										stepThree?.paragraph?.length > 235
-											? stepThree?.paragraph?.substring(0, 235) + "..."
+										stepThree?.paragraph?.length > 350
+											? stepThree?.paragraph?.substring(0, 350) + "..."
 											: stepThree?.paragraph
 									}
 									tailwindStyling="text-black text-tiny sm:text-base text-center"
