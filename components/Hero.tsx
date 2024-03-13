@@ -23,7 +23,7 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 		<>
 			<div className={styles.hero + " relative z-50 flex flex-col h-fit"}>
 				<div className="lg:relative pt-[75px] flex flex-col lg:flex-row">
-					<div className={styles.heroSlider + ` relative overflow-hidden`}>
+					<div className="HeroSwiperSlider relative overflow-hidden">
 						<Swiper
 							loop={true}
 							navigation={true}
@@ -34,7 +34,6 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 								delay: 10000,
 								disableOnInteraction: false,
 							}}
-							className={styles.heroSlider}
 						>
 							{heroSlider?.length > 0 ? (
 								heroSlider?.map((item: any, keys: number) => (
@@ -42,7 +41,7 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 										<SwiperSlide>
 											<div className="w-full p-4">
 												<div
-													className="pt-24 pb-20 w-full h-[80vh] sm:h-[65vh] flex flex-col items-center lg:items-baseline justify-center relative bg-center bg-no-repeat bg-cover"
+													className="pt-24 pb-20 w-full h-[90vh] sm:h-[65vh] flex flex-col items-center lg:items-baseline justify-center relative bg-center bg-no-repeat bg-cover"
 													style={{
 														backgroundImage: `linear-gradient(
 																0deg,

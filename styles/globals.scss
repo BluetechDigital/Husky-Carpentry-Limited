@@ -106,6 +106,26 @@ h3 {
 	color: $blueDarker !important;
 }
 
+.HeroSwiperSlider {
+	.swiper-button-prev::after {
+		content: "next";
+		width: 15px !important;
+		height: 15px !important;
+		font-size: 15px !important;
+		font-weight: 900 !important;
+		color: $white !important;
+	}
+
+	.swiper-button-next::after {
+		content: "next";
+		width: 15px !important;
+		height: 15px !important;
+		font-size: 15px !important;
+		font-weight: 900 !important;
+		color: $white !important;
+	}
+}
+
 /* SQUARE BOX CUBES
 PAGE LOADING ANIMATION */
 .spinner-wrapper {
