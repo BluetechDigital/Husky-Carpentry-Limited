@@ -42,7 +42,7 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 										<SwiperSlide>
 											<div className="w-full p-4">
 												<div
-													className="pt-24 pb-20 w-full h-[65vh] flex flex-col items-center lg:items-baseline justify-center relative bg-center bg-no-repeat bg-cover"
+													className="pt-24 pb-20 w-full h-[80vh] sm:h-[65vh] flex flex-col items-center lg:items-baseline justify-center relative bg-center bg-no-repeat bg-cover"
 													style={{
 														backgroundImage: `linear-gradient(
 																0deg,
