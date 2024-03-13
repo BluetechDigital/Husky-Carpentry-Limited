@@ -41,7 +41,7 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 										<SwiperSlide>
 											<div className="w-full p-4">
 												<div
-													className="pt-24 pb-20 w-full h-[100vh] sm:h-[65vh] flex flex-col items-center lg:items-baseline justify-center relative bg-center bg-no-repeat bg-cover"
+													className="pt-24 pb-44 sm:pb-20 w-full h-[75vh] sm:h-[65vh] flex flex-col items-center lg:items-baseline justify-center relative bg-center bg-no-repeat bg-cover"
 													style={{
 														backgroundImage: `linear-gradient(
 																0deg,
@@ -51,7 +51,7 @@ const Hero: FC<IHero> = ({heroSlider}) => {
 															),url("${item?.backgroundImage?.sourceUrl}")`,
 													}}
 												>
-													<div className="relative z-10 flex flex-col items-center lg:items-start gap-4 px-8 sm:px-24">
+													<div className="relative z-10 flex flex-col items-center lg:items-start gap-4 px-8 px-4 sm:px-24">
 														<div className="max-w-sm lg:max-w-xl mx-auto lg:mx-0 ">
 															<motion.h1
 																initial={initialTwo}
