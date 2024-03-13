@@ -107,10 +107,39 @@ h3 {
 }
 
 .HeroSwiperSlider {
+	.swiper-button-prev {
+		margin-left: 1rem !important;
+	}
+
+	.swiper-button-next {
+		margin-right: 1rem !important;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		@apply mt-12 border-2 border-blue-default hover:border-blue-default hover:bg-blue-default;
+	}
+
+	@media screen and (min-width: 1024px) {
+		.swiper-button-prev {
+			margin-left: 0.75rem !important;
+		}
+
+		.swiper-button-next {
+			margin-right: 0.75rem !important;
+		}
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			@apply mt-[-30px];
+		}
+	}
+
 	.swiper-button-prev::after {
 		content: "next";
 		width: 15px !important;
 		height: 15px !important;
+		rotate: 180deg !important;
 		font-size: 15px !important;
 		font-weight: 900 !important;
 		color: $white !important;
