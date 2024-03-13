@@ -117,7 +117,7 @@ h3 {
 
 	.swiper-button-prev,
 	.swiper-button-next {
-		@apply mt-[-10px] sm:mt-0 lg:mt-[-30px] border-2 border-blue-default hover:border-blue-default hover:bg-blue-default;
+		@apply mt-[-10px] sm:mt-[10px] lg:mt-[-30px] border-2 border-blue-default hover:border-blue-default hover:bg-blue-default;
 	}
 
 	@media screen and (min-width: 425px) {
@@ -127,11 +127,6 @@ h3 {
 
 		.swiper-button-next {
 			margin-right: 0.75rem !important;
-		}
-
-		.swiper-button-prev,
-		.swiper-button-next {
-			@apply mt-[-30px];
 		}
 	}
 
