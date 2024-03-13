@@ -25,7 +25,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 					styles.gettingStarted + ` relative pt-24 pb-4 bg-blue-darker`
 				}
 			>
-				<div className="container px-4 mx-auto">
+				<div className="md:md:container px-4 mx-auto">
 					<motion.h4
 						initial={initial}
 						whileInView={fadeInUp}
@@ -50,7 +50,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 							viewport={{once: true}}
 							className="mb-2 p-6 lg:p-0 bg-lightGreyTwo lg:bg-pureBlack"
 						>
-							<div className="container px-0 mx-auto">
+							<div className="md:container px-0 mx-auto">
 								<div className={styles.stepOne + ` relative p-6 sm:p-8`}>
 									<Image
 										alt={stepOne?.image?.altText}
@@ -87,7 +87,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 							viewport={{once: true}}
 							className="mb-2 p-6 lg:p-0 bg-lightGreyTwo lg:bg-pureBlack"
 						>
-							<div className="container px-0 mx-auto">
+							<div className="md:container px-0 mx-auto">
 								<div className={styles.stepTwo + ` relative p-6 sm:p-8`}>
 									<Image
 										alt={stepTwo?.image?.altText}
@@ -124,7 +124,7 @@ const GettingStarted: FC<IGettingStarted> = ({
 							viewport={{once: true}}
 							className="mb-2 p-6 lg:p-0 bg-lightGreyTwo lg:bg-pureBlack"
 						>
-							<div className="container px-0 mx-auto">
+							<div className="md:container px-0 mx-auto">
 								<div className={styles.stepThree + ` relative p-6 sm:p-8`}>
 									<Image
 										alt={stepThree?.image?.altText}

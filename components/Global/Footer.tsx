@@ -27,7 +27,7 @@ const Footer: FC = () => {
 				" p-0 overflow-hidden bg-lightGreyTwo bg-cover bg-center bg-no-repeat"
 			}
 		>
-			<div className="container p-4 mx-auto">
+			<div className="md:container p-4 mx-auto">
 				<div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-4 gap-16 lg:gap-4">
 					<motion.div
 						initial={initial}
@@ -381,7 +381,7 @@ const Footer: FC = () => {
 				</div>
 			</div>
 			<div className=" bg-pureBlack py-4 my-0">
-				<div className="container px-4 mx-auto flex flex-col-reverse lg:flex-row items-center justify-between ">
+				<div className="md:container px-4 mx-auto flex flex-col-reverse lg:flex-row items-center justify-between ">
 					<motion.div
 						initial={initial}
 						variants={stagger}

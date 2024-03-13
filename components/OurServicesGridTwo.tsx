@@ -33,7 +33,7 @@ const OurServicesGridTwo: FC<IOurServicesGridTwo> = ({
 					backgroundImage: `url("/svg/background/polygon-scatter-haikei-lightgrey-two.svg")`,
 				}}
 			>
-				<div className="container relative m-auto flex flex-col items-center gap-6">
+				<div className="md:container relative m-auto flex flex-col items-center gap-6">
 					<motion.div
 						initial={initial}
 						variants={stagger}
@@ -50,7 +50,7 @@ const OurServicesGridTwo: FC<IOurServicesGridTwo> = ({
 							{title}
 						</motion.h3>
 					</motion.div>
-					<div className="w-full relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 py-6 px-0 sm:px-4 gap-6 items-start justify-center">
+					<div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-6 px-0 md:px-4 gap-6 items-start justify-center">
 						{servicesGrid?.length > 0 ? (
 							servicesGrid?.map((item: any, keys: number) => (
 								<Fragment key={keys}>

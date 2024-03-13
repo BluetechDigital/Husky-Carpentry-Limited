@@ -19,7 +19,7 @@ const OurProjectsGrid: FC<IOurProjectsGrid> = ({
 	return (
 		<>
 			<div className="py-12 px-4 bg-white">
-				<div className="container px-0 mx-auto flex flex-col items-center gap-6 lg:gap-16">
+				<div className="md:container px-0 mx-auto flex flex-col items-center gap-6 lg:gap-16">
 					<motion.div
 						initial={initial}
 						variants={stagger}
@@ -54,7 +54,7 @@ const OurProjectsGrid: FC<IOurProjectsGrid> = ({
 						contentType="OurProjectsCard"
 						numberOfItemsRenderedPerPage={12}
 						contentArray={globalContext?.ourProjects}
-						tailwindStyling={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-6 px-0 sm:px-4 lg:-m-4 gap-16 lg:gap-6`}
+						tailwindStyling={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-6 px-0 md:px-4 lg:-m-4 gap-16 lg:gap-6`}
 					/>
 				</div>
 			</div>

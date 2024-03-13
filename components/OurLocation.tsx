@@ -11,7 +11,7 @@ const OurLocation: FC<IOurLocation> = ({title, paragraph}) => {
 	return (
 		<>
 			<div className="bg-white">
-				<div className="container x-0 mx-auto">
+				<div className="md:container x-0 mx-auto">
 					<motion.div
 						initial={initial}
 						variants={stagger}
